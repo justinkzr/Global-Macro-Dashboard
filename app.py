@@ -247,6 +247,9 @@ if page == "China Macro":
 # --------------------
 # Market Commentary
 
+# --------------------
+# Market Commentary
+
 if page == "Market Commentary":
     st.title("📘 Market Commentary")
 
@@ -255,9 +258,9 @@ if page == "Market Commentary":
     # Load saved commentary if exists
     if os.path.exists(file_path):
         with open(file_path, "r", encoding="utf-8") as f:
-            default_text = f.read()
+            commentary_text = f.read()
     else:
-        default_text = """
+        commentary_text = """
 📅 Date: 
 🌎 Macro Environment Summary:
 - US:
@@ -275,14 +278,9 @@ if page == "Market Commentary":
 🧠 Personal Takeaways:
         """
 
-    notes = st.text_area("Write your macro thoughts here:", default_text, height=500)
-    if st.button("💾 Save Commentary"):
-        with open(file_path, "w", encoding="utf-8") as f:
-            f.write(notes)
-        st.success("Commentary saved!")
+    st.markdown("### 🧾 Commentary")
+    st.markdown(commentary_text)
 
-    st.markdown("### 🧾 Preview")
-    st.markdown(notes)
 
     # --------------------
 # Trade Ideas
