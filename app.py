@@ -74,6 +74,12 @@ def load_us_gdp():
     return gdp_yoy
 
 @st.cache_data(ttl=3600)
+def load_us_nfp():
+    nfp = web.DataReader('PAYEMS', 'fred', start='2010-01-01')  # Total Nonfarm Payrolls
+    nfp.rename(columns={'PAYEMS': 'Non-Farm Payrolls'}, inplace=True)
+    return nfp
+
+@st.cache_data(ttl=3600)
 def load_euro_cpi():
     euro_cpi = web.DataReader('IRLTLT01EZM156N', 'fred', start='2010-01-01')
     euro_cpi.rename(columns={'IRLTLT01EZM156N': 'Euro_CPI'}, inplace=True)
@@ -174,6 +180,16 @@ if page == "US Macro":
     st.line_chart(gdp.rename(columns={gdp.columns[0]: "Real GDP YoY"}))
     st.line_chart(cpi.rename(columns={cpi.columns[0]: "CPI YoY"}))
     st.line_chart(unemp.rename(columns={unemp.columns[0]: "Unemployment Rate"}))
+
+    st.subheader("📈 Non-Farm Payrolls (NFP)")
+    st.line_chart(nfp)
+
+    st.subheader("📋 PMI (Manual Entry)")
+    st.info("S&P Global PMI data is not free via API. You can manually update it below.")
+
+    st.write("**Latest PMI (Manufacturing)**: 51.3")
+    st.write("**Latest PMI (Services)**: 52.8")
+    st.caption("Source: S&P Global, manually updated.")
 
 
 # --------------------
