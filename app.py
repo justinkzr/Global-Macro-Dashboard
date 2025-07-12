@@ -175,7 +175,7 @@ if page == "Market Monitor":
                     value=f"{price:,.2f}",
                     delta=f"{delta:+.2f} ({pct:+.2f}%)"
                 )
-                st.line_chart(df[ticker][-30:], use_container_width=True)
+                st.line_chart(df[ticker], use_container_width=True)
 
 
 
