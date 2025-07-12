@@ -12,7 +12,9 @@ from streamlit_calendar import calendar
 import requests
 from streamlit_calendar import calendar
 import matplotlib.pyplot as plt
+from fredapi import fred
 
+fred = Fred(api_key=st.secrets["FRED"]["API_KEY"])
 
 
 
@@ -57,31 +59,35 @@ def get_fx_data(from_symbol, to_symbol):
 
 @st.cache_data(ttl=3600)
 def load_us_cpi():
-    cpi = web.DataReader('CPIAUCSL', 'fred', start='2010-01-01')
+    cpi = fred.get_series("CPIAUCSL")
+    cpi = cpi.resample("M").last()
     cpi_yoy = cpi.pct_change(12) * 100
-    cpi_yoy.dropna(inplace=True)
-    cpi_yoy.rename(columns={'CPIAUCSL': 'CPI_YoY'}, inplace=True)
+    cpi_yoy = cpi_yoy.dropna().to_frame(name="CPI_YoY")
     return cpi_yoy
+
 
 @st.cache_data(ttl=3600)
 def load_us_unemp():
-    unemp = web.DataReader('UNRATE', 'fred', start='2010-01-01')
-    unemp.rename(columns={'UNRATE': 'Unemployment'}, inplace=True)
+    unemp = fred.get_series("UNRATE")
+    unemp = unemp.to_frame(name="Unemployment")
     return unemp
+
 
 @st.cache_data(ttl=3600)
 def load_us_gdp():
-    gdp = web.DataReader('GDPC1', 'fred', start='2010-01-01')
+    gdp = fred.get_series("GDPC1")
+    gdp = gdp.resample("Q").last()
     gdp_yoy = gdp.pct_change(4) * 100
-    gdp_yoy.dropna(inplace=True)
-    gdp_yoy.rename(columns={'GDPC1': 'GDP_YoY'}, inplace=True)
+    gdp_yoy = gdp_yoy.dropna().to_frame(name="GDP_YoY")
     return gdp_yoy
+
 
 @st.cache_data(ttl=3600)
 def load_us_nfp():
-    nfp = web.DataReader('PAYEMS', 'fred', start='2010-01-01')  # Total Nonfarm Payrolls
-    nfp.rename(columns={'PAYEMS': 'Non-Farm Payrolls'}, inplace=True)
+    nfp = fred.get_series("PAYEMS")
+    nfp = nfp.to_frame(name="Non-Farm Payrolls")
     return nfp
+
 
 @st.cache_data(ttl=3600)
 def load_euro_cpi():
@@ -105,19 +111,17 @@ def load_china_gdp():
     return data
 
 @st.cache_data(ttl=3600)
+@st.cache_data(ttl=3600)
 def load_us_yields():
-    tickers = ['DTB3', 'GS2', 'GS10', 'GS30']
-    data = {}
-    for t in tickers:
-        series = web.DataReader(t, 'fred', start='2016-01-01')
-        series.columns = [t]
-        data[t] = series
-
-    df = pd.concat(data.values(), axis=1)
-    df = df.ffill()  # Fill missing values forward
-    df = df.dropna() # Remove rows with any NaNs
-    df.columns = ['3M', '2Y', '10Y', '30Y']
+    series = {
+        "3M": "DTB3",
+        "2Y": "GS2",
+        "10Y": "GS10",
+        "30Y": "GS30"
+    }
+    df = pd.DataFrame({label: fred.get_series(code) for label, code in series.items()})
     return df
+
 
 
 
