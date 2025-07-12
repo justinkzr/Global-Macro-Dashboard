@@ -124,8 +124,10 @@ def load_market_assets():
 
     df = pd.DataFrame()
     for name, ticker in tickers.items():
-        df[name] = yf.download(ticker, start="2023-01-01")["Close"]
-    return df
+        data = yf.download(ticker, start="2023-01-01", auto_adjust=False)["Close"]
+        data.name = name
+    df = pd.concat([df, data], axis=1)
+
 
 
 
