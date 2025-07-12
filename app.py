@@ -111,55 +111,47 @@ def load_us_yields():
 @st.cache_data(ttl=3600)
 def load_market_assets():
     import yfinance as yf
-    assets = {
+    tickers = {
         "SPY": "SPY",
-        "EURUSD": "EURUSD=X",
-        "USDJPY": "JPY=X",
-        "Gold": "GC=F",
-        "Crude": "CL=F",
-        "VIX": "^VIX"
+        "QQQ": "QQQ",
+        "US500": "^GSPC",
+        "US100": "^NDX",
+        "Gold (XAU/USD)": "XAUUSD=X",
+        "US 10Y Yield": "^TNX",
+        "VIX": "^VIX",
+        "Crude Oil": "CL=F"
     }
     df = pd.DataFrame()
-    for name, ticker in assets.items():
+    for name, ticker in tickers.items():
         df[name] = yf.download(ticker, start="2023-01-01")["Close"]
     return df
+
 
 
 # --------------------
 # Market Monitor
 
 if page == "Market Monitor":
-    st.title("Global Market Monitor")
+    st.title("🌍 Global Market Monitor")
 
-    # SPY data
-    try:
-        spy_data = get_spy_data()
-        st.write("S&P 500 (SPY):", round(spy_data['4. close'].iloc[-1], 2))
-        fig_spy = go.Figure()
-        fig_spy.add_trace(go.Scatter(x=spy_data.index, y=spy_data['4. close'], mode='lines', name='SPY'))
-        fig_spy.update_layout(title="S&P 500 (SPY)", xaxis_title="Date", yaxis_title="Price")
-        st.plotly_chart(fig_spy, key="spy_chart")
-    except:
-        st.warning("Failed to load SPY data.")
+    df = load_market_assets()
+    latest = df.iloc[-1]
+    prev = df.iloc[-2]
 
-    # EUR/USD
-    try:
-        eurusd = get_fx_data('EUR', 'USD')
-        st.write("EUR/USD:", round(eurusd['4. close'].iloc[-1], 4))
-    except:
-        st.warning("Failed to load EUR/USD data.")
+    for asset in df.columns:
+        price = latest[asset]
+        delta = price - prev[asset]
+        pct = (delta / prev[asset]) * 100
 
-    # USD/JPY with inversion logic
-    try:
-        usdjpy_raw = get_fx_data('JPY', 'USD')
-        usdjpy_raw['USDJPY'] = 1 / usdjpy_raw['4. close']
-        st.write("USD/JPY:", round(usdjpy_raw['USDJPY'].iloc[-1], 2))
-        fig_usdjpy = go.Figure()
-        fig_usdjpy.add_trace(go.Scatter(x=usdjpy_raw.index, y=usdjpy_raw['USDJPY'], mode='lines', name='USD/JPY'))
-        fig_usdjpy.update_layout(title="USD/JPY", xaxis_title="Date", yaxis_title="Exchange Rate")
-        st.plotly_chart(fig_usdjpy)
-    except:
-        st.warning("Failed to load USD/JPY data.")
+        col = st.container()
+        col.metric(
+            label=asset,
+            value=f"{price:,.2f}",
+            delta=f"{delta:+.2f} ({pct:+.2f}%)"
+        )
+        st.line_chart(df[asset][-30:], use_container_width=True)
+
+
 
 # --------------------
 # US Macro
@@ -174,10 +166,11 @@ if page == "US Macro":
     nfp = load_us_nfp()
 
 
-    col1, col2, col3 = st.columns(3)
+    col1, col2, col3, col4 = st.columns(4)
     col1.metric("Real GDP YoY", f"{gdp.iloc[-1, 0]:.2f}%")
     col2.metric("CPI YoY", f"{cpi.iloc[-1, 0]:.2f}%")
     col3.metric("Unemployment", f"{unemp.iloc[-1, 0]:.2f}%")
+    col4.metric("NFP (Thousands)", f"{nfp.iloc[-1, 0]:,.0f}")
 
     st.line_chart(gdp.rename(columns={gdp.columns[0]: "Real GDP YoY"}))
     st.line_chart(cpi.rename(columns={cpi.columns[0]: "CPI YoY"}))
