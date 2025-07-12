@@ -402,8 +402,16 @@ if page == "Economic Calendar":
         {"title": "🇦🇺 RBA Cash Rate", "start": "2025-07-8"},
     ]
 
-    calendar(sample_events, options={"initialView": "dayGridMonth", "validRange": {"start": "2024-01-01"}  # or an earlier date if needed
-        })
+    calendar(
+    sample_events,
+    options={
+        "initialView": "dayGridMonth",
+        "validRange": {
+            "start": "2024-01-01"  # or an earlier date if needed
+        }
+    }
+)
+
 
 
 
