@@ -123,10 +123,22 @@ def load_market_assets():
     }
 
     df = pd.DataFrame()
+
     for name, ticker in tickers.items():
-        data = yf.download(ticker, start="2023-01-01", auto_adjust=False)["Close"]
-        data.name = name
-    df = pd.concat([df, data], axis=1)
+        try:
+            data = yf.download(ticker, start="2023-01-01", auto_adjust=False)["Close"]
+            if not data.empty:
+                data.name = name
+                df = pd.concat([df, data], axis=1)
+            else:
+                st.warning(f"⚠️ No data for {name} ({ticker})")
+        except Exception as e:
+            st.error(f"❌ Failed to load {name} ({ticker}): {e}")
+
+    if df.empty:
+        return pd.DataFrame()  # return empty safely
+    return df
+
 
 
 
@@ -138,6 +150,8 @@ if page == "Market Monitor":
     st.title("🌍 Global Market Monitor")
 
     df = load_market_assets()
+    if df.empty:
+        st.error("Market data could not be loaded")
     latest = df.iloc[-1]
     prev = df.iloc[-2]
 
