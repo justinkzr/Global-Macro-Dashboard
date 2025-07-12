@@ -105,29 +105,11 @@ def load_china_gdp():
 
 @st.cache_data(ttl=3600)
 def load_us_yields():
-    tickers = {
-        '3M': 'DTB3',
-        '2Y': 'GS2',
-        '10Y': 'GS10',
-        '30Y': 'GS30'
-    }
-
-    data = {}
-    for label, fred_code in tickers.items():
-        try:
-            df = web.DataReader(fred_code, 'fred', start='2023-01-01')
-            st.write(f"{label} loaded: {df.dropna().tail(1)}")  # DEBUG output in Streamlit
-            data[label] = df
-        except Exception as e:
-            st.warning(f"{label} failed to load: {e}")
-
-    if not data:
-        return pd.DataFrame()
-
+    tickers = ['DTB3', 'GS2', 'GS5', 'GS10', 'GS30']
+    data = {t: web.DataReader(t, 'fred', start='2023-01-01') for t in tickers}
     df = pd.concat(data.values(), axis=1)
-    df.columns = data.keys()
+    df.columns = ['3M', '2Y', '5Y', '10Y', '30Y']
     return df
-
 
 
 @st.cache_data(ttl=3600)
@@ -312,23 +294,34 @@ if page == "Sentiment & Positioning":
 
 if page == "Yield Curve":
     st.title("📈 US Yield Curve")
-    yields = load_us_yields()
 
-    if yields.empty:
-        st.error("Yield data could not be loaded.")
+    yields = load_us_yields()
+    latest = yields.dropna().iloc[-1]
+
+    # Calculate spreads
+    spread_2s10s = latest["10Y"] - latest["2Y"]
+    spread_3m10y = latest["10Y"] - latest["3M"]
+
+    # Show warnings
+    if spread_2s10s < 0:
+        st.warning(f"2s10s spread inverted: {spread_2s10s:.2f}%")
     else:
-        latest = yields.apply(lambda x: x.dropna().iloc[-1])
-        fig = go.Figure(go.Scatter(
-    x=latest.index,
-    y=latest.values,
-    mode='lines+markers'
-))
-fig.update_layout(
-    title="Latest US Yield Curve",
-    xaxis_title="Maturity",
-    yaxis_title="Yield (%)"
-)
-st.plotly_chart(fig)
+        st.success(f"2s10s spread: {spread_2s10s:.2f}%")
+
+    if spread_3m10y < 0:
+        st.warning(f"3M10Y spread inverted: {spread_3m10y:.2f}%")
+    else:
+        st.success(f"3M10Y spread: {spread_3m10y:.2f}%")
+
+    # Display yield curve
+    fig = go.Figure(go.Scatter(
+        x=latest.index,
+        y=latest.values,
+        mode='lines+markers',
+        name='Yield Curve'
+    ))
+    fig.update_layout(title="Latest US Yield Curve", xaxis_title="Maturity", yaxis_title="Yield (%)")
+    st.plotly_chart(fig)
 
 
 
