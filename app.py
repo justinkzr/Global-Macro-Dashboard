@@ -19,7 +19,7 @@ API_KEY = st.secrets["ALPHA_VANTAGE_API"]
 
 
 st.set_page_config(page_title="Global Macro Dashboard", layout="wide")
-st.sidebar.title("Global Macro Dashboard")
+st.sidebar.title("Justin's Global Macro Dashboard")
 page = st.sidebar.selectbox("Select Page", [
     "Market Monitor", "US Macro", "Eurozone Macro", "China Macro",
     "Market Commentary", "Trade Ideas",
