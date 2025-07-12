@@ -26,6 +26,8 @@ page = st.sidebar.selectbox("Select Page", [
     "Market Sentiment", "Yield Curve", "Recession Risk",
     "Economic Calendar", "Correlation Matrix", "Macro Regime"
 ])
+st.markdown("<h3 style='text-align: right; color: gray;'>JK Capital</h3>", unsafe_allow_html=True)
+
 
 
 
