@@ -10,3 +10,4 @@ matplotlib
 streamlit-calendar
 beautifulsoup4
 lxml
+fredapi
