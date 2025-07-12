@@ -27,7 +27,7 @@ page = st.sidebar.selectbox("Select Page", [
     "Economic Calendar", "Correlation Matrix", "Macro Regime"
 ])
 st.markdown("""
-    <div style='position: absolute; top: 30px; left: 20px; font-size: 24px; font-weight: bold; color: #444; z-index: 1000;'>
+    <div style='position: absolute; top: 0px; left: 20px; font-size: 40px; font-weight: bold; color: #444; z-index: 1000;'>
         JK Capital
     </div>
 """, unsafe_allow_html=True)
