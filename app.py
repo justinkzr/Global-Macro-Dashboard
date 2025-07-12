@@ -420,6 +420,17 @@ def scrape_forexfactory_calendar():
     df = pd.DataFrame(events)
     return df
 
+from streamlit_calendar import calendar
+
+def get_calendar_events_from_df(df):
+    return [
+        {
+            "title": f"{row['currency']} {row['event']} ({row['impact']})",
+            "start": row['datetime']
+        }
+        for _, row in df.iterrows()
+    ]
+
 
 
 
