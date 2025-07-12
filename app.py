@@ -111,14 +111,15 @@ def load_us_yields():
         '10Y': 'GS10',
         '30Y': 'GS30'
     }
-    data = {}
 
+    data = {}
     for label, fred_code in tickers.items():
         try:
             df = web.DataReader(fred_code, 'fred', start='2023-01-01')
+            st.write(f"{label} loaded: {df.dropna().tail(1)}")  # DEBUG output in Streamlit
             data[label] = df
         except Exception as e:
-            st.warning(f"Failed to load {label} ({fred_code}): {e}")
+            st.warning(f"{label} failed to load: {e}")
 
     if not data:
         return pd.DataFrame()
@@ -126,6 +127,7 @@ def load_us_yields():
     df = pd.concat(data.values(), axis=1)
     df.columns = data.keys()
     return df
+
 
 
 @st.cache_data(ttl=3600)
