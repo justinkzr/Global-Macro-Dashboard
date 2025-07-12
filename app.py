@@ -112,15 +112,15 @@ def load_us_yields():
 def load_market_assets():
     import yfinance as yf
     tickers = {
-    "SPY": "SPY",
-    "QQQ": "QQQ",
-    "US500": "^GSPC",
-    "US100": "^NDX",
-    "Gold (Futures)": "GC=F",        
-    "US 10Y Yield": "^TNX",
-    "VIX": "^VIX",
-    "Crude Oil": "CL=F"
-}
+        "SPY": "SPY",
+        "QQQ": "QQQ",
+        "US500": "^GSPC",
+        "US100": "^NDX",
+        "Gold (Futures)": "GC=F",        
+        "US 10Y Yield": "^TNX",
+        "VIX": "^VIX",
+        "Crude Oil": "CL=F"
+    }
 
     }
     df = pd.DataFrame()
