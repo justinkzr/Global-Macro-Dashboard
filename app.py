@@ -388,24 +388,38 @@ def load_macro_events():
 if page == "Economic Calendar":
     st.title("📅 U.S. Economic Calendar")
 
-    try:
-        events = load_macro_events()
-        if events:
-            calendar(events, options={"initialView": "dayGridMonth"})
-        else:
-            raise ValueError("Empty event list")
-    except:
-        st.warning("⚠️ Failed to load real-time data. Showing sample events instead.")
+import requests
+from bs4 import BeautifulSoup
+import pandas as pd
 
-        sample_events = [
-            {"title": "🇺🇸 CPI Report", "start": "2025-06-27"},
-            {"title": "🇺🇸 FOMC Meeting", "start": "2025-07-17"},
-            {"title": "🇺🇸 ECB Rate Decision", "start": "2025-07-25"},
-            {"title": "🇺🇸 NFP Report", "start": "2025-08-02"},
-            {"title": "🇺🇸 ISM Manufacturing PMI", "start": "2025-07-01"},
-        ]
+def scrape_forexfactory_calendar():
+    url = "https://www.forexfactory.com/calendar"
+    headers = {"User-Agent": "Mozilla/5.0"}
+    response = requests.get(url, headers=headers)
+    soup = BeautifulSoup(response.text, "html.parser")
 
-        calendar(sample_events, options={"initialView": "dayGridMonth"})
+    events = []
+    rows = soup.select("tr.calendar__row")
+
+    for row in rows:
+        time = row.select_one(".calendar__time")
+        currency = row.select_one(".calendar__currency")
+        event = row.select_one(".calendar__event")
+        impact = row.select_one(".impact--icon")
+        date = row.get("data-event-datetime")
+
+        if all([time, currency, event, impact]):
+            events.append({
+                "datetime": date,
+                "time": time.text.strip(),
+                "currency": currency.text.strip(),
+                "event": event.text.strip(),
+                "impact": impact["title"] if impact else "Low"
+            })
+
+    df = pd.DataFrame(events)
+    return df
+
 
 
 
