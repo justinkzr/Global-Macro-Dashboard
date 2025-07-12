@@ -122,7 +122,6 @@ def load_market_assets():
         "Crude Oil": "CL=F"
     }
 
-    }
     df = pd.DataFrame()
     for name, ticker in tickers.items():
         df[name] = yf.download(ticker, start="2023-01-01")["Close"]
