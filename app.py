@@ -23,7 +23,7 @@ st.sidebar.title("JK Capital")
 page = st.sidebar.selectbox("Select Page", [
     "Market Monitor", "US Macro", "Eurozone Macro", "China Macro",
     "Market Commentary", "Trade Ideas",
-    "Market Sentiment", "Yield Curve", "Recession Risk",
+    "Sentiment & Positioning", "Yield Curve", "Recession Risk",
     "Economic Calendar", "Correlation Matrix", "Macro Regime"
 ])
 
