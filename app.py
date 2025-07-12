@@ -111,33 +111,27 @@ def load_us_yields():
 @st.cache_data(ttl=3600)
 def load_market_assets():
     import yfinance as yf
+
     tickers = {
         "SPY": "SPY",
         "QQQ": "QQQ",
         "US500": "^GSPC",
         "US100": "^NDX",
-        "Gold (Futures)": "GC=F",        
-        "US 10Y Yield": "^TNX",
+        "Gold": "GC=F",
+        "US10Y": "^TNX",
         "VIX": "^VIX",
         "Crude Oil": "CL=F"
     }
 
     df = pd.DataFrame()
-
-    for name, ticker in tickers.items():
+    for display_name, yf_ticker in tickers.items():
         try:
-            data = yf.download(ticker, start="2023-01-01", auto_adjust=False)["Close"]
-            if not data.empty:
-                data.name = name
-                df = pd.concat([df, data], axis=1)
-            else:
-                st.warning(f"⚠️ No data for {name} ({ticker})")
+            data = yf.download(yf_ticker, start="2023-01-01")["Close"]
+            df[display_name] = data
         except Exception as e:
-            st.error(f"❌ Failed to load {name} ({ticker}): {e}")
-
-    if df.empty:
-        return pd.DataFrame()  # return empty safely
+            print(f"Error downloading {display_name}: {e}")
     return df
+
 
 
 
@@ -148,12 +142,8 @@ def load_market_assets():
 
 if page == "Market Monitor":
     st.title("🌍 Global Market Monitor")
+
     
-if st.button("🔁 Clear Cache"):
-    st.cache_data.clear()
-    st.success("Cache cleared. Please refresh the page.")
-
-
     df = load_market_assets()
     if df.empty:
         st.error("Market data could not be loaded")
