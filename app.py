@@ -105,11 +105,19 @@ def load_china_gdp():
 
 @st.cache_data(ttl=3600)
 def load_us_yields():
-    tickers = ['DTB3', 'GS2', 'GS5', 'GS10', 'GS30']
-    data = {t: web.DataReader(t, 'fred', start='2023-01-01') for t in tickers}
+    tickers = ['DTB3', 'GS2', 'GS10', 'GS30']
+    data = {}
+    for t in tickers:
+        series = web.DataReader(t, 'fred', start='2023-01-01')
+        series.columns = [t]
+        data[t] = series
+
     df = pd.concat(data.values(), axis=1)
-    df.columns = ['3M', '2Y', '5Y', '10Y', '30Y']
+    df = df.ffill()  # Fill missing values forward
+    df = df.dropna() # Remove rows with any NaNs
+    df.columns = ['3M', '2Y', '10Y', '30Y']
     return df
+
 
 
 @st.cache_data(ttl=3600)
@@ -323,25 +331,29 @@ if page == "Yield Curve":
     fig.update_layout(title="Latest US Yield Curve", xaxis_title="Maturity", yaxis_title="Yield (%)")
     st.plotly_chart(fig)
 
-    # --- Time-Series Plots for Spreads ---
-
     st.subheader("📊 Yield Curve Spreads Over Time")
 
-    spread_2s10s_series = yields["10Y"] - yields["2Y"]
-    spread_3m10y_series = yields["10Y"] - yields["3M"]
+    yields = load_us_yields()
 
+    spread_2s10s = yields['10Y'] - yields['2Y']
+    spread_3m10y = yields['10Y'] - yields['3M']
+
+    st.title("📊 Yield Curve Spreads Over Time")
+    
+    # 2s10s Spread Chart
     fig_2s10s = go.Figure()
-    fig_2s10s.add_trace(go.Scatter(x=spread_2s10s_series.index, y=spread_2s10s_series, mode='lines', name='2s10s Spread'))
-    fig_2s10s.add_hline(y=0, line=dict(color='red', dash='dash'))
+    fig_2s10s.add_trace(go.Scatter(x=spread_2s10s.index, y=spread_2s10s, name="2s10s Spread"))
+    fig_2s10s.add_hline(y=0, line_dash="dash", line_color="red")
     fig_2s10s.update_layout(title="2s10s Spread (10Y - 2Y)", xaxis_title="Date", yaxis_title="Spread (%)")
-
-    fig_3m10y = go.Figure()
-    fig_3m10y.add_trace(go.Scatter(x=spread_3m10y_series.index, y=spread_3m10y_series, mode='lines', name='3M10Y Spread'))
-    fig_3m10y.add_hline(y=0, line=dict(color='red', dash='dash'))
-    fig_3m10y.update_layout(title="3M10Y Spread (10Y - 3M)", xaxis_title="Date", yaxis_title="Spread (%)")
-
     st.plotly_chart(fig_2s10s, use_container_width=True)
+    
+    # 3M10Y Spread Chart
+    fig_3m10y = go.Figure()
+    fig_3m10y.add_trace(go.Scatter(x=spread_3m10y.index, y=spread_3m10y, name="3M10Y Spread"))
+    fig_3m10y.add_hline(y=0, line_dash="dash", line_color="red")
+    fig_3m10y.update_layout(title="3M10Y Spread (10Y - 3M)", xaxis_title="Date", yaxis_title="Spread (%)")
     st.plotly_chart(fig_3m10y, use_container_width=True)
+
 
 
 
