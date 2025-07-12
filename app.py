@@ -108,7 +108,7 @@ def load_us_yields():
     tickers = ['DTB3', 'GS2', 'GS10', 'GS30']
     data = {}
     for t in tickers:
-        series = web.DataReader(t, 'fred', start='2023-01-01')
+        series = web.DataReader(t, 'fred', start='2016-01-01')
         series.columns = [t]
         data[t] = series
 
@@ -139,7 +139,7 @@ def load_market_assets():
     df = pd.DataFrame()
     for name, ticker in tickers.items():
         try:
-            df[name] = yf.download(ticker, start="2023-01-01")["Close"]
+            df[name] = yf.download(ticker, start="2016-01-01")["Close"]
         except Exception as e:
             st.warning(f"⚠️ Failed to load {name}: {e}")
     return df
