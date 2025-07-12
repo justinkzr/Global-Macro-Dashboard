@@ -388,15 +388,18 @@ def load_macro_events():
 if page == "Economic Calendar":
     st.title("📅 Economic Calendar")
 
-    st.info("This calendar is manually maintained. Update key macro events below.")
 
     sample_events = [
-        {"title": "🇺🇸 CPI Report", "start": "2025-07-25"},
-        {"title": "🇺🇸 FOMC Meeting", "start": "2025-08-01"},
-        {"title": "🇯🇵 BoJ Policy Meeting", "start": "2025-07-29"},
-        {"title": "🇪🇺 ECB Rate Decision", "start": "2025-07-26"},
-        {"title": "🇩🇪 Germany Ifo Business Climate", "start": "2025-07-24"},
-        {"title": "🇺🇸 Non-Farm Payrolls", "start": "2025-08-02"},
+        {"title": "🇺🇸 ISM Manufacturing PMI", "start": "2025-07-1"},
+        {"title": "🇺🇸 NFP", "start": "2025-07-3"},
+        {"title": "🇺🇸 CPI", "start": "2025-07-15"},
+        {"title": "🇺🇸 PPI", "start": "2025-07-16"},
+        {"title": "🇺🇸 Retail Sales", "start": "2025-07-17"},
+        {"title": "🇺🇸 Unemployment Claims", "start": "2025-07-23"},
+        {"title": "🇺🇸 FOMC", "start": "2025-07-31"},
+        {"title": "🇺🇸 Core PCE", "start": "2025-07-31"},
+        {"title": "🇯🇵 BoJ Policy Rate", "start": "2025-07-31"},
+        {"title": "🇦🇺 RBA Cash Rate", "start": "2025-07-8"},
     ]
 
     calendar(sample_events, options={"initialView": "dayGridMonth"})
