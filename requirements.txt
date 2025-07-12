@@ -8,3 +8,5 @@ alpha_vantage
 yfinance
 matplotlib
 streamlit-calendar
+beautifulsoup4
+lxml
