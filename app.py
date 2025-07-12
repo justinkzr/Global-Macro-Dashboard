@@ -148,6 +148,11 @@ def load_market_assets():
 
 if page == "Market Monitor":
     st.title("🌍 Global Market Monitor")
+    
+if st.button("🔁 Clear Cache"):
+    st.cache_data.clear()
+    st.success("Cache cleared. Please refresh the page.")
+
 
     df = load_market_assets()
     if df.empty:
