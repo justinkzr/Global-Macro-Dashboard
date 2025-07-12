@@ -153,7 +153,7 @@ def load_market_assets():
 # Market Monitor
 
 if page == "Market Monitor":
-    st.title("🌍 Global Market Monitor")
+    st.title("🌍 Global Markets Monitor")
 
     
     df = load_market_assets()
