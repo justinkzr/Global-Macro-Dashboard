@@ -12,8 +12,7 @@ from streamlit_calendar import calendar
 import requests
 from streamlit_calendar import calendar
 import matplotlib.pyplot as plt
-import requests
-from bs4 import BeautifulSoup
+
 
 
 
@@ -29,7 +28,6 @@ page = st.sidebar.selectbox("Select Page", [
     "Sentiment & Positioning", "Yield Curve", "Recession Risk",
     "Economic Calendar", "Correlation Matrix", "Macro Regime"
 ])
-
 
 
 
