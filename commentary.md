@@ -1,4 +1,4 @@
-📅 Date: 12 July 2025
+📅 Date: 12 July 2025	
 🌎 Macro Environment Summary: 
 - US:
 - Eurozone:
