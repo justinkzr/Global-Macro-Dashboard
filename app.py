@@ -12,7 +12,7 @@ from streamlit_calendar import calendar
 import requests
 from streamlit_calendar import calendar
 import matplotlib.pyplot as plt
-from fredapi import fred
+from fredapi import Fred
 
 fred = Fred(api_key=st.secrets["FRED"]["API_KEY"])
 
