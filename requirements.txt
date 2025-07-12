@@ -1,0 +1,10 @@
+streamlit
+pandas
+plotly
+pandas_datareader
+wbdata
+requests
+alpha_vantage
+yfinance
+matplotlib
+streamlit-calendar
