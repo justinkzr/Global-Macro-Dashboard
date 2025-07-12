@@ -114,25 +114,25 @@ def load_us_yields():
 @st.cache_data(ttl=3600)
 def load_market_assets():
     import yfinance as yf
-
     tickers = {
-        "SPY": "SPY",
-        "QQQ": "QQQ",
-        "US500": "^GSPC",
-        "US100": "^NDX",
-        "Gold": "GC=F",
-        "US10Y": "^TNX",
-        "VIX": "^VIX",
-        "Crude Oil": "CL=F"
+        "US500": "^GSPC",             # S&P 500
+        "US100": "^NDX",              # Nasdaq 100
+        "Dow Jones": "^DJI",          # Dow Jones
+        "Russell 2000": "^RUT",       # Russell 2000
+        "FTSE 100": "^FTSE",          # FTSE 100
+        "Hang Seng": "^HSI",          # Hang Seng Index
+        "Gold": "GC=F",               # Gold Futures
+        "US 10Y Yield": "^TNX",       # 10-Year Yield
+        "VIX": "^VIX",                # Volatility Index
+        "Crude Oil": "CL=F"           # Crude Oil Futures
     }
 
     df = pd.DataFrame()
-    for display_name, yf_ticker in tickers.items():
+    for name, ticker in tickers.items():
         try:
-            data = yf.download(yf_ticker, start="2023-01-01")["Close"]
-            df[display_name] = data
+            df[name] = yf.download(ticker, start="2023-01-01")["Close"]
         except Exception as e:
-            print(f"Error downloading {display_name}: {e}")
+            st.warning(f"⚠️ Failed to load {name}: {e}")
     return df
 
 
