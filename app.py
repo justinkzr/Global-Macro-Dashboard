@@ -323,6 +323,27 @@ if page == "Yield Curve":
     fig.update_layout(title="Latest US Yield Curve", xaxis_title="Maturity", yaxis_title="Yield (%)")
     st.plotly_chart(fig)
 
+    # --- Time-Series Plots for Spreads ---
+
+    st.subheader("📊 Yield Curve Spreads Over Time")
+
+    spread_2s10s_series = yields["10Y"] - yields["2Y"]
+    spread_3m10y_series = yields["10Y"] - yields["3M"]
+
+    fig_2s10s = go.Figure()
+    fig_2s10s.add_trace(go.Scatter(x=spread_2s10s_series.index, y=spread_2s10s_series, mode='lines', name='2s10s Spread'))
+    fig_2s10s.add_hline(y=0, line=dict(color='red', dash='dash'))
+    fig_2s10s.update_layout(title="2s10s Spread (10Y - 2Y)", xaxis_title="Date", yaxis_title="Spread (%)")
+
+    fig_3m10y = go.Figure()
+    fig_3m10y.add_trace(go.Scatter(x=spread_3m10y_series.index, y=spread_3m10y_series, mode='lines', name='3M10Y Spread'))
+    fig_3m10y.add_hline(y=0, line=dict(color='red', dash='dash'))
+    fig_3m10y.update_layout(title="3M10Y Spread (10Y - 3M)", xaxis_title="Date", yaxis_title="Spread (%)")
+
+    st.plotly_chart(fig_2s10s, use_container_width=True)
+    st.plotly_chart(fig_3m10y, use_container_width=True)
+
+
 
 
 if page == "Recession Risk":
