@@ -317,10 +317,19 @@ if page == "Yield Curve":
     if yields.empty:
         st.error("Yield data could not be loaded.")
     else:
-        latest = yields.iloc[-1]
-        fig = go.Figure(go.Scatter(x=latest.index, y=latest.values, mode='lines+markers'))
-        fig.update_layout(title="Latest US Yield Curve", xaxis_title="Maturity", yaxis_title="Yield (%)")
-        st.plotly_chart(fig)
+        latest = yields.apply(lambda x: x.dropna().iloc[-1])
+        fig = go.Figure(go.Scatter(
+    x=latest.index,
+    y=latest.values,
+    mode='lines+markers'
+))
+fig.update_layout(
+    title="Latest US Yield Curve",
+    xaxis_title="Maturity",
+    yaxis_title="Yield (%)"
+)
+st.plotly_chart(fig)
+
 
 
 if page == "Recession Risk":
