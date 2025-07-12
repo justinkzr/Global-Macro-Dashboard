@@ -431,6 +431,9 @@ def get_calendar_events_from_df(df):
         for _, row in df.iterrows()
     ]
 
+df = scrape_forexfactory_calendar()
+events = get_calendar_events_from_df(df)
+calendar(events, options={"initialView": "dayGridMonth"})
 
 
 
