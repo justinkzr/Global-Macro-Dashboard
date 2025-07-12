@@ -138,18 +138,28 @@ if page == "Market Monitor":
     latest = df.iloc[-1]
     prev = df.iloc[-2]
 
-    for asset in df.columns:
-        price = latest[asset]
-        delta = price - prev[asset]
-        pct = (delta / prev[asset]) * 100
+    tickers = df.columns.tolist()
+    num_cols = 3
 
-        col = st.container()
-        col.metric(
-            label=asset,
-            value=f"{price:,.2f}",
-            delta=f"{delta:+.2f} ({pct:+.2f}%)"
-        )
-        st.line_chart(df[asset][-30:], use_container_width=True)
+    for i in range(0, len(tickers), num_cols):
+        cols = st.columns(num_cols)
+        for j, col in enumerate(cols):
+            if i + j >= len(tickers):
+                break
+
+            ticker = tickers[i + j]
+            price = latest[ticker]
+            delta = price - prev[ticker]
+            pct = (delta / prev[ticker]) * 100
+
+            with col:
+                st.metric(
+                    label=ticker,
+                    value=f"{price:,.2f}",
+                    delta=f"{delta:+.2f} ({pct:+.2f}%)"
+                )
+                st.line_chart(df[ticker][-30:], use_container_width=True)
+
 
 
 
