@@ -287,8 +287,8 @@ if page == "Market Commentary":
     # --------------------
 # Trade Ideas
 
-if page == "Market Sentiment":
-    st.title("🧠 Market Sentiment")
+if page == "Sentiment & Positioning":
+    st.title("🧠 Sentiment & Positioning")
     st.metric("Equity Sentiment", "+0.34 (Bullish)")
     st.metric("FX Sentiment", "-0.20 (Bearish)")
     st.markdown("Sentiment signals coming from placeholder. Integrate FinBERT or Marketaux for live sentiment.")
