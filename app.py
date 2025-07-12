@@ -14,7 +14,7 @@ from streamlit_calendar import calendar
 import matplotlib.pyplot as plt
 
 
-TE_API_KEY = st.secrets["TRADING_ECON_API"] 
+TE_API_KEY = none 
 
 # INSERT YOUR ALPHA VANTAGE API KEY
 API_KEY = st.secrets["ALPHA_VANTAGE_API"]
@@ -160,52 +160,23 @@ if page == "Market Monitor":
 # --------------------
 # US Macro
 if page == "US Macro":
-
     st.title("🇺🇸 US Macro Dashboard")
-    st.write("Visualize key US economic indicators from TradingEconomics API.")
 
-    api_key = TE_API_KEY
+    st.subheader("Key Economic Indicators (FRED)")
 
-    indicators = {
-        "GDP QoQ": "GDP Growth Rate",
-        "GDP YoY": "GDP Annual Growth Rate",
-        "Inflation CPI": "Inflation Rate",
-        "Inflation Core PCE": "Core Inflation Rate",
-        "Unemployment": "Unemployment Rate",
-        "PMI Manufacturing": "Manufacturing PMI",
-        "PMI Services": "Services PMI",
-        "Consumer Sentiment": "Consumer Confidence",
-        "Industrial Production": "Industrial Production"
-}
+    gdp = load_us_gdp()
+    cpi = load_us_cpi()
+    unemp = load_us_unemp()
 
-    if api_key:
-        data_dict = {}
+    col1, col2, col3 = st.columns(3)
+    col1.metric("Real GDP YoY", f"{gdp.iloc[-1, 0]:.2f}%")
+    col2.metric("CPI YoY", f"{cpi.iloc[-1, 0]:.2f}%")
+    col3.metric("Unemployment", f"{unemp.iloc[-1, 0]:.2f}%")
 
-        for label, indicator in indicators.items():
-            url = f"https://api.tradingeconomics.com/historical/country/united states/indicator/{indicator}?c={api_key}&f=json"
-            response = requests.get(url)
+    st.line_chart(gdp.rename(columns={gdp.columns[0]: "Real GDP YoY"}))
+    st.line_chart(cpi.rename(columns={cpi.columns[0]: "CPI YoY"}))
+    st.line_chart(unemp.rename(columns={unemp.columns[0]: "Unemployment Rate"}))
 
-            if response.status_code == 200:
-                df = pd.DataFrame(response.json())
-                df = df[["date", "value"]]
-                df["date"] = pd.to_datetime(df["date"])
-                df.set_index("date", inplace=True)
-                df = df.sort_index()
-                data_dict[label] = df.rename(columns={"value": label})
-            else:
-                st.warning(f"❌ Failed to load {label}")
-
-        combined_df = pd.concat(data_dict.values(), axis=1)
-
-        st.subheader("📊 Combined Data Table")
-        st.dataframe(combined_df.tail(), use_container_width=True)
-
-        st.subheader("📈 Indicator Charts")
-        for label in indicators:
-            if label in data_dict and not data_dict[label].empty:
-                st.line_chart(data_dict[label], use_container_width=True)
-    else:
-        st.info("Please input your TradingEconomics API key to begin.")
 
 # --------------------
 # Eurozone Macro
