@@ -256,9 +256,6 @@ if page == "China Macro":
 # --------------------
 # Market Commentary
 
-# --------------------
-# Market Commentary
-
 if page == "Market Commentary":
     st.title("📘 Market Commentary")
 
@@ -330,8 +327,6 @@ if page == "Yield Curve":
     ))
     fig.update_layout(title="Latest US Yield Curve", xaxis_title="Maturity", yaxis_title="Yield (%)")
     st.plotly_chart(fig)
-
-    st.subheader("📊 Yield Curve Spreads Over Time")
 
     yields = load_us_yields()
 
