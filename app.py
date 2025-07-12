@@ -147,45 +147,6 @@ def load_market_assets():
             st.warning(f"⚠️ Failed to load {name}: {e}")
     return df
     
-@st.cache_data(ttl=1800)
-def get_forex_factory_events():
-    url = "https://www.forexfactory.com/calendar"
-    headers = {'User-Agent': 'Mozilla/5.0'}
-
-    response = requests.get(url, headers=headers)
-    soup = BeautifulSoup(response.content, "lxml")
-
-    events = []
-
-    table = soup.find("table", {"class": "calendar__table"})
-    if not table:
-        return []
-
-    rows = table.find_all("tr", class_="calendar__row")
-    for row in rows:
-        time = row.find("td", class_="calendar__time")
-        currency = row.find("td", class_="calendar__currency")
-        impact = row.find("td", class_="impact")
-        event = row.find("td", class_="calendar__event")
-
-        if not (time and currency and impact and event):
-            continue
-
-        country = currency.text.strip()
-        if country not in ["USD", "JPY", "EUR"]:
-            continue
-
-        events.append({
-            "time": time.text.strip(),
-            "country": country,
-            "impact": impact.get("title", "").strip(),
-            "event": event.text.strip()
-        })
-
-    return events
-
-
-
 
 
 
@@ -427,15 +388,21 @@ def load_macro_events():
 # 📅 Economic Calendar page
 
 if page == "Economic Calendar":
-    st.title("📅 Economic Calendar (USD, EUR, JPY)")
-    
-    events = get_forex_factory_events()
-    if not events:
-        st.warning("⚠️ Could not fetch data from ForexFactory.")
-    else:
-        df = pd.DataFrame(events)
-        df = df[df["impact"].isin(["High", "Medium"])]  # Optional: filter for impact
-        st.dataframe(df, use_container_width=True)
+    st.title("📅 Economic Calendar")
+
+    st.info("This calendar is manually maintained. Update key macro events below.")
+
+    sample_events = [
+        {"title": "🇺🇸 CPI Report", "start": "2025-07-25"},
+        {"title": "🇺🇸 FOMC Meeting", "start": "2025-08-01"},
+        {"title": "🇯🇵 BoJ Policy Meeting", "start": "2025-07-29"},
+        {"title": "🇪🇺 ECB Rate Decision", "start": "2025-07-26"},
+        {"title": "🇩🇪 Germany Ifo Business Climate", "start": "2025-07-24"},
+        {"title": "🇺🇸 Non-Farm Payrolls", "start": "2025-08-02"},
+    ]
+
+    calendar(sample_events, options={"initialView": "dayGridMonth"})
+
 
 
 
