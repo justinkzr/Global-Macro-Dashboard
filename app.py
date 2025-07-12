@@ -171,6 +171,8 @@ if page == "US Macro":
     gdp = load_us_gdp()
     cpi = load_us_cpi()
     unemp = load_us_unemp()
+    nfp = load_us_nfp()
+
 
     col1, col2, col3 = st.columns(3)
     col1.metric("Real GDP YoY", f"{gdp.iloc[-1, 0]:.2f}%")
