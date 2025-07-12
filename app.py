@@ -19,18 +19,14 @@ API_KEY = st.secrets["ALPHA_VANTAGE_API"]
 
 
 st.set_page_config(page_title="Global Macro Dashboard", layout="wide")
-st.sidebar.title("Justin's Global Macro Dashboard")
+st.sidebar.title("JK Capital")
 page = st.sidebar.selectbox("Select Page", [
     "Market Monitor", "US Macro", "Eurozone Macro", "China Macro",
     "Market Commentary", "Trade Ideas",
     "Market Sentiment", "Yield Curve", "Recession Risk",
     "Economic Calendar", "Correlation Matrix", "Macro Regime"
 ])
-st.markdown("""
-    <div style='position: absolute; top: -40px; left: 10px; font-size: 40px; font-weight: bold; color: #444; z-index: 1000;'>
-        JK Capital
-    </div>
-""", unsafe_allow_html=True)
+
 
 
 
