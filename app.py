@@ -14,8 +14,6 @@ from streamlit_calendar import calendar
 import matplotlib.pyplot as plt
 
 
-TE_API_KEY = none 
-
 # INSERT YOUR ALPHA VANTAGE API KEY
 API_KEY = st.secrets["ALPHA_VANTAGE_API"]
 
