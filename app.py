@@ -12,6 +12,9 @@ from streamlit_calendar import calendar
 import requests
 from streamlit_calendar import calendar
 import matplotlib.pyplot as plt
+import requests
+from bs4 import BeautifulSoup
+
 
 
 # INSERT YOUR ALPHA VANTAGE API KEY
