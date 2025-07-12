@@ -105,11 +105,28 @@ def load_china_gdp():
 
 @st.cache_data(ttl=3600)
 def load_us_yields():
-    tickers = ['DTB3', 'GS2', 'GS10', 'GS30']
-    data = {t: web.DataReader(t, 'fred', start='2023-01-01') for t in tickers}
+    tickers = {
+        '3M': 'DTB3',
+        '2Y': 'GS2',
+        '10Y': 'GS10',
+        '30Y': 'GS30'
+    }
+    data = {}
+
+    for label, fred_code in tickers.items():
+        try:
+            df = web.DataReader(fred_code, 'fred', start='2023-01-01')
+            data[label] = df
+        except Exception as e:
+            st.warning(f"Failed to load {label} ({fred_code}): {e}")
+
+    if not data:
+        return pd.DataFrame()
+
     df = pd.concat(data.values(), axis=1)
-    df.columns = ['3M', '2Y', '10Y', '30Y']
+    df.columns = data.keys()
     return df
+
 
 @st.cache_data(ttl=3600)
 def load_market_assets():
@@ -294,10 +311,15 @@ if page == "Sentiment & Positioning":
 if page == "Yield Curve":
     st.title("📈 US Yield Curve")
     yields = load_us_yields()
-    latest = yields.iloc[-1]
-    fig = go.Figure(go.Scatter(x=latest.index, y=latest.values, mode='lines+markers'))
-    fig.update_layout(title="Latest US Yield Curve", xaxis_title="Maturity", yaxis_title="Yield (%)")
-    st.plotly_chart(fig)
+
+    if yields.empty:
+        st.error("Yield data could not be loaded.")
+    else:
+        latest = yields.iloc[-1]
+        fig = go.Figure(go.Scatter(x=latest.index, y=latest.values, mode='lines+markers'))
+        fig.update_layout(title="Latest US Yield Curve", xaxis_title="Maturity", yaxis_title="Yield (%)")
+        st.plotly_chart(fig)
+
 
 if page == "Recession Risk":
     st.title("⚠️ Recession Risk Indicator")
