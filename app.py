@@ -146,6 +146,43 @@ def load_market_assets():
         except Exception as e:
             st.warning(f"⚠️ Failed to load {name}: {e}")
     return df
+    
+@st.cache_data(ttl=1800)
+def get_forex_factory_events():
+    url = "https://www.forexfactory.com/calendar"
+    headers = {'User-Agent': 'Mozilla/5.0'}
+
+    response = requests.get(url, headers=headers)
+    soup = BeautifulSoup(response.content, "lxml")
+
+    events = []
+
+    table = soup.find("table", {"class": "calendar__table"})
+    if not table:
+        return []
+
+    rows = table.find_all("tr", class_="calendar__row")
+    for row in rows:
+        time = row.find("td", class_="calendar__time")
+        currency = row.find("td", class_="calendar__currency")
+        impact = row.find("td", class_="impact")
+        event = row.find("td", class_="calendar__event")
+
+        if not (time and currency and impact and event):
+            continue
+
+        country = currency.text.strip()
+        if country not in ["USD", "JPY", "EUR"]:
+            continue
+
+        events.append({
+            "time": time.text.strip(),
+            "country": country,
+            "impact": impact.get("title", "").strip(),
+            "event": event.text.strip()
+        })
+
+    return events
 
 
 
@@ -388,55 +425,18 @@ def load_macro_events():
     return events
 
 # 📅 Economic Calendar page
+
 if page == "Economic Calendar":
-    st.title("📅 U.S. Economic Calendar")
+    st.title("📅 Economic Calendar (USD, EUR, JPY)")
+    
+    events = get_forex_factory_events()
+    if not events:
+        st.warning("⚠️ Could not fetch data from ForexFactory.")
+    else:
+        df = pd.DataFrame(events)
+        df = df[df["impact"].isin(["High", "Medium"])]  # Optional: filter for impact
+        st.dataframe(df, use_container_width=True)
 
-import requests
-from bs4 import BeautifulSoup
-import pandas as pd
-
-def scrape_forexfactory_calendar():
-    url = "https://www.forexfactory.com/calendar"
-    headers = {"User-Agent": "Mozilla/5.0"}
-    response = requests.get(url, headers=headers)
-    soup = BeautifulSoup(response.text, "html.parser")
-
-    events = []
-    rows = soup.select("tr.calendar__row")
-
-    for row in rows:
-        time = row.select_one(".calendar__time")
-        currency = row.select_one(".calendar__currency")
-        event = row.select_one(".calendar__event")
-        impact = row.select_one(".impact--icon")
-        date = row.get("data-event-datetime")
-
-        if all([time, currency, event, impact]):
-            events.append({
-                "datetime": date,
-                "time": time.text.strip(),
-                "currency": currency.text.strip(),
-                "event": event.text.strip(),
-                "impact": impact["title"] if impact else "Low"
-            })
-
-    df = pd.DataFrame(events)
-    return df
-
-from streamlit_calendar import calendar
-
-def get_calendar_events_from_df(df):
-    return [
-        {
-            "title": f"{row['currency']} {row['event']} ({row['impact']})",
-            "start": row['datetime']
-        }
-        for _, row in df.iterrows()
-    ]
-
-df = scrape_forexfactory_calendar()
-events = get_calendar_events_from_df(df)
-calendar(events, options={"initialView": "dayGridMonth"})
 
 
 
