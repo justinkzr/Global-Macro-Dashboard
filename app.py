@@ -110,7 +110,7 @@ def load_china_gdp():
     data = data[data.index >= pd.Timestamp("2010-01-01")]
     return data
 
-@st.cache_data(ttl=3600)
+
 @st.cache_data(ttl=3600)
 def load_us_yields():
     series = {
