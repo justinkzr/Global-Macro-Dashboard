@@ -28,7 +28,7 @@ page = st.sidebar.selectbox("Select Page", [
     "Market Monitor", "US Macro", "Eurozone Macro", "China Macro",
     "Market Commentary", "Trade Ideas",
     "Sentiment & Positioning", "Yield Curve", "Recession Risk",
-    "Economic Calendar", "Correlation Matrix", "Macro Regime"
+    "Economic Calendar", "Macro Regime"
 ])
 
 
@@ -415,25 +415,6 @@ if page == "Economic Calendar":
         }
     }
 )
-
-
-
-
-
-
-if page == "Correlation Matrix":
-    st.title("📊 Asset Correlation Matrix")
-    df = load_market_assets()
-    corr = df.corr()
-    fig = go.Figure(data=go.Heatmap(
-        z=corr.values,
-        x=corr.columns,
-        y=corr.columns,
-        colorscale='RdBu',
-        zmin=-1,
-        zmax=1
-    ))
-    st.plotly_chart(fig)
 
 if page == "Macro Regime":
     st.title("🔍 Macro Regime Classifier")
