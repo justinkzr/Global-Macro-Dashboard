@@ -27,7 +27,7 @@ st.sidebar.title("JK Capital")
 page = st.sidebar.selectbox("Select Page", [
     "Market Monitor", "US Macro", "Eurozone Macro", "China Macro",
     "Market Commentary", "Trade Ideas",
-    "Sentiment & Positioning", "Yield Curve", "Recession Risk",
+    "Sentiment & Positioning", "Yield Curve",
     "Economic Calendar", "Macro Regime"
 ])
 
@@ -352,21 +352,6 @@ if page == "Yield Curve":
     fig_3m10y.update_layout(title="3M10Y Spread (10Y - 3M)", xaxis_title="Date", yaxis_title="Spread (%)")
     st.plotly_chart(fig_3m10y, use_container_width=True)
 
-
-
-
-
-if page == "Recession Risk":
-    st.title("⚠️ Recession Risk Indicator")
-    yields = load_us_yields()
-    unemp = load_us_unemp()
-    slope = yields['10Y'] - yields['2Y']
-    recent_slope = slope.iloc[-1]
-    unemp_rate = unemp.iloc[-1, 0]
-    risk = "High" if recent_slope < 0 and unemp_rate > 4 else "Moderate"
-    st.metric("Recession Risk", risk)
-    st.write(f"2s10s Slope: {recent_slope:.2f}")
-    st.write(f"Unemployment Rate: {unemp_rate:.2f}%")
 
 @st.cache_data(ttl=3600)
 def load_macro_events():
