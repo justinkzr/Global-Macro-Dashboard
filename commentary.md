@@ -23,4 +23,4 @@
 | EU              | All    | 15%      |     8/7/2025  |      
 | EU, JP, SK      | Auto and Parts   | 12.5-15%    | - |
 | Vietnam         | All   | 20%      |   8/7/2025 |
-| Japan | All | 15%       |  15%     |   8/7/2025 |
+| Japan | All | 15%      |   8/7/2025 |
