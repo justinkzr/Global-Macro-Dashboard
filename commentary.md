@@ -56,9 +56,19 @@ The U.S.–China trade war continues to cast a long shadow. Since January, the U
 **Other:**
 
 📊 Market Drivers:
-- Rates:
+
+Rates:
+  A surprisingly strong June inflation report and hawkish Fed speak in mid-July caused a sharp selloff in bonds – the 10yr yield jumped on the order of 60 basis points, reflecting fears that tariff-driven price increases could force the Fed to stay restrictive longer. (Yields also rose as the market trimmed bets on a Fed rate cut in September down to <50% odds.) However, when later data showed some cracks (e.g. a weak July jobs number at +73k payrolls, unemployment uptick to 4.2%), bonds found support. 
+
+Europe: Bond yields have generally fallen as ECB's rate cuts and deteriorating growth outlook drove a rally. 
+Japan: 10Y JGB Yield spiked to 1.60% in late July amid speculation the BOJ might adjust yield-curve control. The spike was exacerbated by a buyer's strike in JGBs due to political instability and Japan's rising inflation. Investors are now on high alert for any hint of BoJ normalizing especially with Governor Ueda suggesting that the 2% inflation target is in sight. 
+  
 - Commodities:
+
+  
 - FX:
+
+  
 - Equities:
 
 📌 Positioning / Sentiment:
