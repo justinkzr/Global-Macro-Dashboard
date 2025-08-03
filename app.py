@@ -379,16 +379,18 @@ if page == "Economic Calendar":
 
 
     sample_events = [
-        {"title": "🇺🇸 ISM Manufacturing PMI", "start": "2025-07-1"},
-        {"title": "🇺🇸 NFP", "start": "2025-07-3"},
-        {"title": "🇺🇸 CPI", "start": "2025-07-15"},
-        {"title": "🇺🇸 PPI", "start": "2025-07-16"},
-        {"title": "🇺🇸 Retail Sales", "start": "2025-07-17"},
-        {"title": "🇺🇸 Unemployment Claims", "start": "2025-07-23"},
+        {"title": "🇺🇸 ISM Manufacturing PMI", "start": "2025-08-1"},
+        {"title": "🇺🇸 NFP", "start": "2025-08-1"},
+        {"title": "🇺🇸 CPI", "start": "2025-08-12"},
+        {"title": "🇺🇸 PPI", "start": "2025-08-14"},
+        {"title": "🇺🇸 Retail Sales", "start": "2025-08-15"},
+        {"title": "🇺🇸 Unemployment Rate", "start": "2025-08-1"},
+        {"title": "🇺🇸 Unemployment Claims", "start": "2025-08-7"},
         {"title": "🇺🇸 FOMC", "start": "2025-07-31"},
-        {"title": "🇺🇸 Core PCE", "start": "2025-07-31"},
+        {"title": "🇺🇸 Core PCE", "start": "2025-08-29"},
         {"title": "🇯🇵 BoJ Policy Rate", "start": "2025-07-31"},
-        {"title": "🇦🇺 RBA Cash Rate", "start": "2025-07-8"},
+        {"title": "🇬🇧 BoE Policy Rate", "start": "2025-08-7"},
+        {"title": "🇦🇺 RBA Cash Rate", "start": "2025-08-12"},
     ]
 
     calendar(
