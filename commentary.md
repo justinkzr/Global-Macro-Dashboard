@@ -1,6 +1,7 @@
 📅 Date: 28 July - 3 Aug 2025	
 
 🌎 Macro Environment Summary: 
+
 **- US:**
 
 **Monetary Policy & Inflation:** 
@@ -11,7 +12,7 @@ Fed held rates steady at 4.25-4.50%, resisting intense pressure from Trump to cu
 
 Average U.S. tariff rate has surged to ~20.6%. Sweeping tariffs took effect on August 1 for countries that lacked deals by Trump's deadline: duties range from 10% to 55% on imports (55% on many Chinese goods, 25% on most autos, 50% on steel/aluminum, and a baseline 10% on others). However, last-minute trade agreements have partially defused worst-case scenarios: for example, the EU, Japan, South Korea, and UK secured deals to cap U.S. tariffs at 15% instead of 25–30%. China, the primary target, reached a preliminary deal in June but still faces 55% tariffs on many exports – and an August 12 deadline looms to finalize a “durable” tariff agreement with Washington. On the fiscal front, the U.S. is contending with higher defense and subsidy spending (e.g. farm aid in response to tariffs), and there’s talk of tax cuts, but so far the dollar’s reserve status has kept financing costs manageable.
 
-<u>GENIUS Act:</u>
+GENIUS Act:
 
 On July 18, 2025, President Donald Trump signed the GENIUS Act (Guiding and Establishing National Innovation for U.S. Stablecoins Act) into law, marking the first federal legislation in the United States to regulate stablecoins. Stablecoin issuers are required to maintain a 1:1 reserve ratio, backing each issued stablecoin with liquid assets such as U.S. dollars, short-term Treasury bills, or other low-risk government-approved assets. The implications for the US Treasury are twofold:
 
@@ -19,9 +20,16 @@ On July 18, 2025, President Donald Trump signed the GENIUS Act (Guiding and Esta
 
 2) Enhanced Dollar Supremacy: The integration of stablecoins into the financial system could reinforce the U.S. dollar's dominance in global trade and finance, as stablecoins provide a digital, efficient means of transacting in dollars.
 
-- Eurozone:
-- China:
-- Other:
+**Economic Growth:**
+
+The U.S. economy is expanding but showing mixed signals. Q2 GDP growth surprised to the upside (the economy rebounded after a slight Q1 dip), but much of the strength came from an import plunge (imports subtract from GDP, so tariffs artificially boosted the math) while domestic demand grew at its slowest pace in ~2.5 years. Consumers are still spending, supported by a strong labor market and earlier excess savings, but business investment has been cautious amid trade uncertainty. Manufacturing is soft – the ISM factory index is teetering around contraction levels – as companies grapple with supply-chain disruptions and higher input costs due to tariffs. Conversely, sectors like services and technology remain robust. The housing market has shown signs of revival thanks to stable mortgage rates, and energy investment is picking up with oil prices off their lows. Overall, the consensus expects moderate growth (~2% for 2025) but with downside risks. Notably, the Fed’s stance is that if tariffs start crimping consumer spending and growth, they might have to “rise to the rescue” despite the inflation uptick. Investors are thus balancing decent current data (e.g. jobless claims remain low, consumer confidence is high) against the clear headwinds of trade policy and fading fiscal stimulus.
+
+
+**Eurozone:**
+
+**China:**
+
+**Other:**
 
 📊 Market Drivers:
 - Rates:
