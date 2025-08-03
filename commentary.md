@@ -1,9 +1,7 @@
-📅 Date: 12 July 2025	
+📅 Date: 28 July - 3 Aug 2025	
 
 🌎 Macro Environment Summary: 
-- US: The dollar had its best weekly performance in more than four months as President Donald Trump's latest tariff threats heightened concern that escalating trade tensions will stoke inflation and derail a rally in risk markets.
-Aroop Chatterjee, a strategist at Wells Fargo, said "the market setup is too sanguine on trade policy risks with short dollar and long risk positions" and that the market shows "too much optimism that the Fed will be rising to the rescue with inflation uncertainty working against that narrative."
-JPMorgan strategists led by Meera Chandan expect the greenback to weaken further based on tariffs and policy uncertainty, and are bullish on the euro, yen and Swiss franc.
+- US: 
 - Eurozone:
 - China:
 - Other:
@@ -17,3 +15,12 @@ JPMorgan strategists led by Meera Chandan expect the greenback to weaken further
 📌 Positioning / Sentiment:
 🧠 Personal Takeaways:
         """
+
+⚖️ Tariff Tracker:
+
+| Country         | Sector  | Rate   | Effective Date |
+|-----------------|--------|----------|---------------|
+| EU              | All    | 15%      |     8/7/2025  |      
+| EU, JP, SK      | Auto and Parts   | 12.5-15%    | - |
+| Vietnam         | All   | 20%      |   8/7/2025 |
+| Japan | All | 15%       |  15%     |   8/7/2025 |
