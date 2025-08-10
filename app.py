@@ -28,7 +28,7 @@ page = st.sidebar.selectbox("Select Page", [
     "Market Monitor", "US Macro", "Eurozone Macro", "China Macro",
     "Market Commentary", "Trade Ideas",
     "Sentiment & Positioning", "Yield Curve",
-    "Economic Calendar", "Macro Regime"
+    "Economic Calendar", "Macro Regime", "Backtesting"
 ])
 
 
@@ -455,4 +455,8 @@ if page == "Trade Ideas":
     )
 
     st.markdown("📋 Tip: Use this table to track your trade ideas, review setups, and evaluate performance.")
+
+
+if page == "Backtesting":
+    st.title("🧪 Backtesting Results")
 
