@@ -277,22 +277,7 @@ if page == "Market Commentary":
             commentary_text = f.read()
     else:
         commentary_text = """
-📅 Date: 
-🌎 Macro Environment Summary:
-- US:
-- Eurozone:
-- China:
-- Other:
 
-📊 Market Drivers:
-- Rates:
-- Commodities:
-- FX:
-- Equities:
-
-📌 Positioning / Sentiment:
-🧠 Personal Takeaways:
-        """
 
     st.markdown("### 🧾 Commentary")
     st.markdown(commentary_text)
