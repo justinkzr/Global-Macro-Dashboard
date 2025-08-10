@@ -269,7 +269,7 @@ if page == "Market Commentary":
         with open(file_path, "r", encoding="utf-8") as f:
             commentary_text = f.read()
     else:
-        commentary_text = """
+        commentary_text = """ """
 
 
     st.markdown("### 🧾 Commentary")
