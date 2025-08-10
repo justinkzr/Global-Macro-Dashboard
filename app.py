@@ -288,6 +288,8 @@ if page == "Market Commentary":
 
 if page == "Sentiment & Positioning":
 
+# Yield Curve page
+
 
 if page == "Yield Curve":
     st.title("📈 US Yield Curve")
