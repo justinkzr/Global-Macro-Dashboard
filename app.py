@@ -255,13 +255,6 @@ if page == "China Macro":
     fig_gdp.add_trace(go.Scatter(x=china_gdp.index, y=china_gdp.iloc[:, 0], mode='lines'))
     fig_gdp.update_layout(title="China GDP YoY Growth (%)", xaxis_title="Date", yaxis_title="GDP YoY")
     st.plotly_chart(fig_gdp)
-
-    file_path = "china.md"
-    if os.path.exists(file_path):
-        with open(file_path, "r", encoding="utf-8") as f:
-            commentary_text = f.read()
-    else:
-        commentary_text = """
         
 # --------------------
 # Market Commentary
