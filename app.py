@@ -14,10 +14,7 @@ from streamlit_calendar import calendar
 import matplotlib.pyplot as plt
 from fredapi import Fred
 
-fred_key = st.secrets.get("FRED_API_KEY")
-if not fred_key:
-    st.error("Missing FRED_API_KEY in Secrets (Manage app → Settings → Secrets).")
-    st.stop()
+
 fred = Fred(api_key=st.secrets["FRED_API_KEY"])
 
 
@@ -201,30 +198,7 @@ if page == "US Macro":
     st.title("🇺🇸 US Macro Dashboard")
     st.subheader("Key Economic Indicators (FRED)")
 
-    gdp = load_us_gdp()
-    cpi = load_us_cpi()
-    unemp = load_us_unemp()
-    nfp = load_us_nfp()
 
-    col1, col2, col3, col4 = st.columns(4)
-    col1.metric("Real GDP YoY", f"{gdp.iloc[-1, 0]:.2f}%")
-    col2.metric("CPI YoY", f"{cpi.iloc[-1, 0]:.2f}%")
-    col3.metric("Unemployment", f"{unemp.iloc[-1, 0]:.2f}%")
-    col4.metric("NFP (Thousands)", f"{nfp.iloc[-1, 0]:,.0f}")
-
-    st.line_chart(gdp.rename(columns={gdp.columns[0]: "Real GDP YoY"}))
-    st.line_chart(cpi.rename(columns={cpi.columns[0]: "CPI YoY"}))
-    st.line_chart(unemp.rename(columns={unemp.columns[0]: "Unemployment Rate"}))
-
-    st.subheader("📈 Non-Farm Payrolls (NFP)")
-    st.line_chart(nfp)
-
-    st.subheader("📋 PMI (Manual Entry)")
-    st.info("S&P Global PMI data is not free via API. You can manually update it below.")
-
-    st.write("**Latest PMI (Manufacturing)**: 51.3")
-    st.write("**Latest PMI (Services)**: 52.8")
-    st.caption("Source: S&P Global, manually updated.")
 
 st.subheader("🧾 Commentary")
 us_commentary = load_commentary("us_commentary.md")
