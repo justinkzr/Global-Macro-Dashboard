@@ -56,36 +56,30 @@ def get_fx_data(from_symbol, to_symbol):
 # --------------------
 # Macro Data (FRED & WB)
 
-@st.cache_data(ttl=3600)
+@st.cache_data(ttl=1800)
 def load_us_cpi():
-    cpi = fred.get_series("CPIAUCSL")
-    cpi = cpi.resample("M").last()
-    cpi_yoy = cpi.pct_change(12) * 100
-    cpi_yoy = cpi_yoy.dropna().to_frame(name="CPI_YoY")
-    return cpi_yoy
+    s = fred.get_series("CPIAUCSL", observation_start="2010-01-01")
+    s = s.asfreq("M")                         # keep monthly freq
+    cpi_yoy = s.pct_change(12).mul(100).dropna()
+    return cpi_yoy.to_frame("CPI_YoY")
 
-
-@st.cache_data(ttl=3600)
+@st.cache_data(ttl=1800)
 def load_us_unemp():
-    unemp = fred.get_series("UNRATE")
-    unemp = unemp.to_frame(name="Unemployment")
-    return unemp
+    s = fred.get_series("UNRATE", observation_start="2010-01-01")
+    return s.asfreq("M").to_frame("Unemployment")
 
-
-@st.cache_data(ttl=3600)
+@st.cache_data(ttl=1800)
 def load_us_gdp():
-    gdp = fred.get_series("GDPC1")
-    gdp = gdp.resample("Q").last()
-    gdp_yoy = gdp.pct_change(4) * 100
-    gdp_yoy = gdp_yoy.dropna().to_frame(name="GDP_YoY")
-    return gdp_yoy
+    s = fred.get_series("GDPC1", observation_start="2000-01-01")
+    s = s.asfreq("Q")                         # quarterly
+    gdp_yoy = s.pct_change(4).mul(100).dropna()
+    return gdp_yoy.to_frame("GDP_YoY")
 
-
-@st.cache_data(ttl=3600)
+@st.cache_data(ttl=1800)
 def load_us_nfp():
-    nfp = fred.get_series("PAYEMS")
-    nfp = nfp.to_frame(name="Non-Farm Payrolls")
-    return nfp
+    s = fred.get_series("PAYEMS", observation_start="2010-01-01")
+    return s.asfreq("M").to_frame("Non-Farm Payrolls")
+
 
 
 @st.cache_data(ttl=3600)
