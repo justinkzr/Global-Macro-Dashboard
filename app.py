@@ -14,6 +14,10 @@ from streamlit_calendar import calendar
 import matplotlib.pyplot as plt
 from fredapi import Fred
 
+fred_key = st.secrets.get("FRED_API_KEY")
+if not fred_key:
+    st.error("Missing FRED_API_KEY in Secrets (Manage app → Settings → Secrets).")
+    st.stop()
 fred = Fred(api_key=st.secrets["FRED_API_KEY"])
 
 
