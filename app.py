@@ -31,6 +31,10 @@ page = st.sidebar.selectbox("Select Page", [
     "Economic Calendar", "Macro Regime", "Backtesting"
 ])
 
+# Add refresh button in sidebar
+if st.sidebar.button("🔄 Refresh data"):
+    st.cache_data.clear()
+    st.experimental_rerun()
 
 
 
