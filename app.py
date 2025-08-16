@@ -142,6 +142,14 @@ def load_market_assets():
             st.warning(f"⚠️ Failed to load {name}: {e}")
     return df
 
+# --------------------
+# Commentary Loader
+
+def load_commentary(file_path):
+    if os.path.exists(file_path):
+        with open(file_path, "r", encoding="utf-8") as f:
+            return f.read()
+    return "✍️ Add commentary in this file."
 
 
 
@@ -187,14 +195,12 @@ if page == "Market Monitor":
 # US Macro
 if page == "US Macro":
     st.title("🇺🇸 US Macro Dashboard")
-
     st.subheader("Key Economic Indicators (FRED)")
 
     gdp = load_us_gdp()
     cpi = load_us_cpi()
     unemp = load_us_unemp()
     nfp = load_us_nfp()
-
 
     col1, col2, col3, col4 = st.columns(4)
     col1.metric("Real GDP YoY", f"{gdp.iloc[-1, 0]:.2f}%")
@@ -216,6 +222,9 @@ if page == "US Macro":
     st.write("**Latest PMI (Services)**: 52.8")
     st.caption("Source: S&P Global, manually updated.")
 
+st.subheader("🧾 Commentary")
+    us_commentary = load_commentary("us_commentary.md")
+    st.markdown(us_commentary)
 
 # --------------------
 # Eurozone Macro
@@ -248,6 +257,10 @@ if page == "China Macro":
     fig_gdp.add_trace(go.Scatter(x=china_gdp.index, y=china_gdp.iloc[:, 0], mode='lines'))
     fig_gdp.update_layout(title="China GDP YoY Growth (%)", xaxis_title="Date", yaxis_title="GDP YoY")
     st.plotly_chart(fig_gdp)
+
+st.subheader("🧾 Commentary")
+    china_commentary = load_commentary("china_commentary.md")
+    st.markdown(china_commentary)
         
 # --------------------
 # Market Commentary
