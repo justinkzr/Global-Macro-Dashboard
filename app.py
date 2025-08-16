@@ -200,9 +200,9 @@ if page == "US Macro":
 
 
 
-st.markdown(us_commentary)
-us_commentary = load_commentary("us_commentary.md")
 
+us_commentary = load_commentary("us_commentary.md")
+st.markdown(us_commentary)
 
 # --------------------
 # Eurozone Macro
