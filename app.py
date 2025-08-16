@@ -149,11 +149,6 @@ def load_market_assets():
     return df
 
 
-# Add refresh button in sidebar
-if st.sidebar.button("🔄 Refresh data"):
-    st.cache_data.clear()
-    st.experimental_rerun()
-
 
 
 # --------------------
