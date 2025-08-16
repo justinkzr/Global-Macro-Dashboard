@@ -223,8 +223,8 @@ if page == "US Macro":
     st.caption("Source: S&P Global, manually updated.")
 
 st.subheader("🧾 Commentary")
-    us_commentary = load_commentary("us_commentary.md")
-    st.markdown(us_commentary)
+us_commentary = load_commentary("us_commentary.md")
+st.markdown(us_commentary)
 
 # --------------------
 # Eurozone Macro
@@ -259,8 +259,8 @@ if page == "China Macro":
     st.plotly_chart(fig_gdp)
 
 st.subheader("🧾 Commentary")
-    china_commentary = load_commentary("china_commentary.md")
-    st.markdown(china_commentary)
+china_commentary = load_commentary("china_commentary.md")
+st.markdown(china_commentary)
         
 # --------------------
 # Market Commentary
