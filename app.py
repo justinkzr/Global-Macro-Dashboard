@@ -200,7 +200,7 @@ if page == "US Macro":
 
 
 
-st.subheader("🧾 Commentary")
+
 us_commentary = load_commentary("us_commentary.md")
 st.markdown(us_commentary)
 
