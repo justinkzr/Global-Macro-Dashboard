@@ -9,7 +9,7 @@ Theme: Narrowing US–JP rate differential + sticky JP inflation/wages + rising 
 
 US side: The Fed held rates at 4.25–4.50% in July and is openly data-dependent. July CPI ran +0.2% m/m; 2.7% y/y (core 3.1%) and July payrolls were +73k with clear cooling momentum—conditions that increase the odds of a September cut, pressuring the front end and the USD. 
 
-Japan side: The BoJ kept its policy rate at 0.50% but raised its inflation outlook; Tokyo July core CPI printed ~2.9% y/y and wages from 2025 shuntō settled ~5.25%, supporting a “wages→prices” loop BoJ wants before further normalization. Markets are leaning to at least one hike into year-end.
+Japan side: The BoJ kept its policy rate at 0.50% but raised its inflation outlook; Tokyo July core CPI printed ~2.9% y/y and wages from 2025 shuntō settled ~5.25%, supporting a “wages→prices” loop BoJ wants before further normalization. Markets are leaning to at least one hike into year-end. Japan’s economy expanded faster than expected last quarter led by solid domestic demand, boosting the case for the Bank of Japan to raise its benchmark rate again this year. Gains were led by business investment, which rose 1.3% from the previous quarter, surpassing the consensus estimate of 0.7% growth, and private consumption nudged 0.2% higher. Gross domestic product grew at an annualized pace of 1% in the three months through June from the prior period, surpassing economists’ forecast of a 0.4% gain
 
 Net effect: With the Fed likely to ease first and the BoJ keeping hike risk alive, the rate spread should compress, historically bearish USD/JPY.
 
