@@ -432,9 +432,10 @@ if page == "Trade Ideas":
     )
 
     st.markdown("📋 Tip: Use this table to track your trade ideas, review setups, and evaluate performance.")
-    
-trade_commentary = load_commentary("tradeidea.md")
+
 st.markdown(tradeidea_commentary)
+trade_commentary = load_commentary("tradeidea.md")
+
 
 if page == "Backtesting":
     st.title("🧪 Backtesting Results")
