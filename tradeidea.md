@@ -1,7 +1,10 @@
 
 
 
-**Trade 1: USDJPY Short**
+**Trade 1: USDJPY Short** 
+
+<img width="2126" height="1366" alt="image" src="https://github.com/user-attachments/assets/5f0e4e79-57fc-4eee-a0ca-6473db8fc0d3" />
+
 
 Time horizon: 4–8 weeks
 Conviction: Medium (build on strength)
@@ -15,11 +18,11 @@ Net effect: With the Fed likely to ease first and the BoJ keeping hike risk aliv
 
 Trade plan
 
-Entry: Scale in 147.80–148.50 (sell strength).
+Entry: 148.75 (Sell Limit Triggered 22/8/2025)
 
-Stop: 149.70 (above the early-Aug rebound highs; invalidates near-term lower-highs set-up).
+Stop: 150 (above the early-Aug rebound highs; invalidates near-term lower-highs set-up).
 
-Targets: T1 145.00, T2 144.00, T3 142.50 (stretch if Fed signals a larger cut path).
+Targets: T1 145.00, T2 142.00 (stretch if Fed signals a larger cut path).
 
 Positioning: Start ½ size at 147.8–148.2, complete at 148.3–148.5; risk per trade ≤ 0.75% of NAV.
 
