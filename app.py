@@ -246,15 +246,7 @@ st.markdown(china_commentary)
 if page == "Market Commentary":
     st.title("📘 Market Commentary")
 
-    file_path = "commentary.md"
-
-    # Load saved commentary if exists
-    if os.path.exists(file_path):
-        with open(file_path, "r", encoding="utf-8") as f:
-            commentary_text = f.read()
-    else:
-        commentary_text = """ """
-
+    commentary_text = load_commentary("commentary.md")
 
     st.markdown("### 🧾 Commentary")
     st.markdown(commentary_text)
