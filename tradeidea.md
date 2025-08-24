@@ -3,9 +3,6 @@
 
 **Trade 1: USDJPY Short** 
 
-<img width="2126" height="1366" alt="image" src="https://github.com/user-attachments/assets/5f0e4e79-57fc-4eee-a0ca-6473db8fc0d3" />
-
-
 Time horizon: 4–8 weeks
 Conviction: Medium (build on strength)
 Theme: Narrowing US–JP rate differential + sticky JP inflation/wages + rising BoJ hike risk
@@ -16,7 +13,7 @@ Japan side: The BoJ kept its policy rate at 0.50% but raised its inflation outlo
 
 Net effect: With the Fed likely to ease first and the BoJ keeping hike risk alive, the rate spread should compress, historically bearish USD/JPY.
 
-Trade plan
+**Trade plan**
 
 Entry: 148.75 (Sell Limit Triggered 22/8/2025)
 
@@ -45,3 +42,6 @@ Mitigate: Exit on close >149.7 or if BoJ signals no hikes for ’25 in the Outlo
 Risk-on surge (equities rip, USD bid broadly).
 
 Mitigate: Hedge with a small long USD/JPY call (OTM 1-month) against tail moves.
+
+
+
