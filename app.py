@@ -146,12 +146,7 @@ def load_market_assets():
 
 # --------------------
 
-# Commentary Loader
-def load_commentary(file_path: str) -> str:
-    fp = Path(__file__).parent / file_path  # resolves relative to app.py
-    if fp.exists():
-        return fp.read_text(encoding="utf-8")
-    return "✍️ Add commentary in this file."
+
 
 
 
@@ -198,6 +193,13 @@ if page == "Market Monitor":
 if page == "US Macro":
     st.title("🇺🇸 US Macro Dashboard")
     st.subheader("Key Economic Indicators (FRED)")
+
+# Commentary Loader
+def load_commentary(file_path: str) -> str:
+    fp = Path(__file__).parent / file_path  # resolves relative to app.py
+    if fp.exists():
+        return fp.read_text(encoding="utf-8")
+    return "✍️ Add commentary in this file."
 
 
 
