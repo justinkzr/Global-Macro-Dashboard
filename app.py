@@ -251,7 +251,41 @@ if page == "Market Commentary":
 
 if page == "Sentiment & Positioning":
 
-    pass  # TODO: fill in later
+# File to persist data
+sentiment_file = "sentiment_positioning.csv"
+
+# Load existing table if present
+if os.path.exists(sentiment_file):
+    df = pd.read_csv(sentiment_file)
+else:
+    df = pd.DataFrame({
+        "Date": [""],
+        "Asset/Class": [""],
+        "Metric": [""],             # e.g. Net long, Net short, OI, Put/Call ratio
+        "Value": [""],              # numeric or string
+        "Source": [""],             # e.g. CFTC, OCC, CME
+        "Comments": [""]
+    })
+
+    st.markdown("### ✍️ Input or update positioning data")
+    edited_df = st.data_editor(df, num_rows="dynamic", use_container_width=True)
+
+    # Save updated table
+    if st.button("💾 Save Sentiment & Positioning"):
+        edited_df.to_csv(sentiment_file, index=False)
+        st.success("✅ Data saved!")
+
+    # Download CSV
+    csv_buffer = BytesIO()
+    edited_df.to_csv(csv_buffer, index=False)
+    st.download_button(
+        label="⬇️ Download CSV",
+        data=csv_buffer.getvalue(),
+        file_name="sentiment_positioning.csv",
+        mime="text/csv"
+    )
+
+    st.markdown("📌 Use this table to track **CFTC CoT net positions**, **options open interest/put-call ratios**, **ETF flows**, or any other sentiment indicators.")
 
 
 # Yield Curve page
