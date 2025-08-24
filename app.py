@@ -13,6 +13,7 @@ import requests
 from streamlit_calendar import calendar
 import matplotlib.pyplot as plt
 from fredapi import Fred
+from pathlib import Path
 
 
 fred = Fred(api_key=st.secrets["FRED_API_KEY"])
@@ -144,13 +145,14 @@ def load_market_assets():
     return df
 
 # --------------------
-# Commentary Loader
 
-def load_commentary(file_path):
-    if os.path.exists(file_path):
-        with open(file_path, "r", encoding="utf-8") as f:
-            return f.read()
+
+def load_commentary(file_path: str) -> str:
+    fp = Path(__file__).parent / file_path
+    if fp.exists():
+        return fp.read_text(encoding="utf-8")
     return "✍️ Add commentary in this file."
+
 
 
 
@@ -246,7 +248,7 @@ st.markdown(china_commentary)
 if page == "Market Commentary":
     st.title("📘 Market Commentary")
 
-    commentary_text = load_commentary(commentary.md)
+    commentary_text = load_commentary("commentary.md")
 
     st.markdown("### 🧾 Commentary")
     st.markdown(commentary_text)
