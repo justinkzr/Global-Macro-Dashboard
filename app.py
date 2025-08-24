@@ -246,7 +246,7 @@ st.markdown(china_commentary)
 if page == "Market Commentary":
     st.title("📘 Market Commentary")
 
-    commentary_text = load_commentary("commentary.md")
+    commentary_text = load_commentary(commentary.md)
 
     st.markdown("### 🧾 Commentary")
     st.markdown(commentary_text)
