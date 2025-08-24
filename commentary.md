@@ -1,58 +1,103 @@
-📅 Date: 3 Aug - 10 Aug 2025	
+📅 Date: 18 Aug - 24 Aug 2025	
 
 🌎 Macro Environment Summary: 
 
 **US:**
 
+Policy & markets: At Jackson Hole, Chair Powell signalled the Fed is open to a September cut, citing a shift in the balance of risks toward the labour market while acknowledging lingering inflation uncertainty. Futures quickly priced ~85–90% odds of a 25 bp cut; Treasury yields fell, equities rallied, and the USD slipped into the Friday close. 
 
-The United States is grappling with escalating trade tensions and shifting monetary expectations. The US dollar just notched its strongest week in over four months as President Donald Trump’s latest tariff threats fueled worries that the trade war will drive up inflation and undercut the rally in risk assets. These trade uncertainties are prompting investors to seek safety in the dollar even as many anticipate the Federal Reserve will begin cutting interest rates. In fact, J.P. Morgan now expects the Fed to cut rates by 25 bps in September (earlier than previously forecast), citing softer labor data and Trump’s efforts to influence the Fed’s leadership. Fed watchers note that policy is at a wait-and-see stage – inflation has been below 3% lately, but added tariffs (including a threatened 100% levy on chips) could stoke price pressures later in the year. Overall, U.S. growth has been resilient so far (helped by robust consumer spending and a strong job market), yet the outlook is clouded by trade policy risks and uncertainty over how aggressively the Fed will respond.
+Growth pulse & prices: S&P Global flash PMIs (Aug) show the private sector still expanding; the composite rose to 55.4, with manufacturing back in expansion and input/output price gauges firming—companies specifically cited tariffs in higher costs. Jobless claims ticked up mid-week, reinforcing the “growth cooling / policy easing” narrative. 
+
+Takeaway: Policy guidance turned easing-biased but data-dependent. Markets are primed for a Sept cut, leaving asymmetry if the next inflation/employment prints surprise hot. 
 
 
 **Eurozone:**
 
-In the Eurozone, economic conditions are lukewarm but stable. Inflation held at 2.0% in July, right on the European Central Bank’s target, with core inflation steady around 2.3%. This has reinforced the ECB’s stance to pause further easing after cutting rates rapidly earlier this year. Euro area growth remains meager but positive – second quarter GDP is expected to show roughly flat or slight growth, reflecting how strength in services is just offsetting manufacturing weakness. Trade tensions with the U.S. remain a major wild card for Europe’s outlook. A recent U.S.-EU trade deal averted a worse outcome (agreeing to a 15% tariff on certain goods instead of a threatened 30%), reducing near-term uncertainty. Germany’s government is also loosening its purse strings with extra spending to counteract the drag from trade issues. While the eurozone’s inflation outlook is benign for now, some policymakers worry that persistent trade barriers could push prices lower over the longer run (especially if China were to dump excess goods into Europe). For the moment, however, Europe’s modest recovery is continuing, driven largely by domestic consumption and the fading of immediate trade war risks
+Inflation & policy: HICP held at 2.0% y/y (Jul) with core ~2.3%, reinforcing expectations that the ECB stays on hold after its rapid easing earlier this year. Sources guidance suggested a September pause, with scope to revisit cuts later if growth/inflation soften again. 
+European Commission
+
+Activity: Q2 GDP +0.1% q/q and improving Aug flash PMIs suggest a modest broadening in activity (manufacturing out of contraction for the first time since 2022 in some surveys), but momentum remains fragile.
+
+Trade tensions: The US-EU tariff cap (~15%) limited worst-case damage vs earlier threats, but policymakers still flag uncertainty around export demand and price dynamics. 
+
 
 **China:**
 
-China faces a contrasting challenge of disinflation and sluggish demand. The latest data showed factory-gate prices (PPI) falling 3.6% year-on-year in July – marking over two years of producer price declines. Consumer prices were flat (0.0% y/y in July, down from 0.1% in June), narrowly avoiding outright deflation. This reflects weak domestic demand and the overhang of a struggling property sector, even as core CPI ticked up to a 17-month high of 0.8% (suggesting some pockets of inflation). Chinese authorities have begun measures to counter deflationary pressure, such as tackling industrial overcapacity, though these efforts so far are more limited than the sweeping reforms of a decade ago. External challenges are also weighing on sentiment: trade uncertainty with the U.S. persists (an August 12 deadline looms for extending a tariff truce) and exports remain under pressure. Without stronger stimulus or structural reforms to boost consumer spending, analysts warn China’s economy will remain under strain – the housing downturn, weak labor market, and fragile U.S.-China relations are all drags on growth. On the positive side, Beijing is avoiding the deep deflation spiral of the past for now, and any improvement in global trade or targeted stimulus at home could help stabilize prices in the coming months.
+Data: July prints missed forecasts—industrial output +5.7% y/y, retail sales +3.7% y/y, FAI slowed—underscoring soft domestic demand. CPI 0.0% y/y and PPI −3.6% y/y keep deflation concerns alive. New-home prices −0.3% m/m and −2.8% y/y highlight property drag. 
+Reuters
+
+Policy & FX: The PBOC left LPRs unchanged (1-yr 3.00% / 5-yr 3.50%, Aug 20), prioritising targeted support over broad easing. Bearish CNY positioning rebuilt toward May highs as growth data disappointed; authorities continue to signal a preference for yuan stability. 
+
+Takeaway: Incremental easing and administrative support continue; without stronger consumption/property stabilisation, growth looks sub-trend into H2. 
 
 
 **Other:**
 
-Other global regions and emerging markets present a mixed picture. Many emerging market (EM) economies are shifting to monetary easing, taking advantage of receding inflation. In July alone, central banks in seven major EM countries cut interest rates, totaling 625 bps of reductions – the largest monthly easing wave in years. Notably, Turkey slashed rates 300 bps and Russia 200 bps, while Indonesia, South Africa, Malaysia, Poland, and Chile each trimmed by 25 bps. This divergence comes as developed-market central banks mostly stood pat in July, awaiting clarity on U.S. trade policy impacts. Emerging economies are hoping lower rates will support growth, but their currencies can come under pressure (especially where rate cuts are steep). For instance, Canada – closely tied to U.S. trade – saw a surprise loss of 40,800 jobs in July as tariffs began to dent hiring plans, highlighting how trade frictions are also affecting other advanced economies. Meanwhile, Japan has maintained an ultra-easy stance; the Bank of Japan hasn’t moved rates (aside from a minor tweak) and yields remain low, even as authorities watch global developments closely. Broadly, the macro environment outside the big three regions is characterized by easing inflation and rate cuts in many countries, but also vulnerability to the U.S.-China trade conflict’s spillover effects (e.g. export-dependent Asian economies and commodity producers). The bottom line: global growth is still chugging along at a modest pace, but every region faces its own headwinds – from trade wars and geopolitical tensions to structural challenges – requiring policy agility in the months ahead.
+Japan: Q2 GDP beat and sticky core CPI keep BOJ normalisation risk on the table later this year.
+
+EM flows: IIF estimated $55.5bn EM portfolio inflows in July (2nd-largest in four years), supporting risk appetite and carry into August—conditional on US data and China sentiment
 
 **📊 Market Drivers:**
 
 **Rates:**
-Interest rates and bond yields have been fluctuating with shifting central bank expectations. In the U.S., Treasury yields have eased recently as markets price in Fed rate cuts – the 10-year yield fell sharply in late July amid growth jitters. Futures indicate nearly a 90%+ chance of a Fed cut in September, which has put downward pressure on yields. European bond yields are relatively stable; with the ECB on hold, the German 10-year is hovering near low levels as inflation sits at target. In contrast, some EM local bond yields are moving down more decisively thanks to rate cuts (e.g. Russian and Turkish yields dropped after their central banks’ aggressive easing). However, policy uncertainty (especially around U.S. tariffs) has introduced volatility: when trade tensions flare, investors often seek the safety of government bonds, pushing yields down, whereas any upside surprises in inflation or growth can send yields back up. Overall, the bias is shifting toward lower rates globally as inflation concerns remain moderate and central banks prioritize supporting growth.
+US: Powell’s tone delivered a bull-steepening impulse: front-end anchored by cut odds while 10y hovered near the mid-4.2s late week as term-premium/supply themes linger. Next catalysts are the final pre-FOMC labour and inflation prints. 
+
+Eurozone: At-target inflation and better PMIs argue for patience; curves largely took direction from the US. 
+
+Japan: Solid growth + above-target core CPI keep JGB term premia biased higher on any BOJ guidance shift.
   
 **Commodities:**
 
-Commodity markets are being pulled by opposing forces of supply changes and demand concerns.
+Oil: OPEC+ confirmed another +547 kb/d addition for September, continuing its market-share push. Prices stabilised late-week on a larger-than-expected US crude draw and geopolitics; Brent sat in the mid-$60s area. 
 
-Oil: Oil prices have softened recently. Brent crude is trading in the high $60s per barrel and U.S. WTI around mid $60s. A major factor is oversupply concerns – OPEC+ agreed to raise output by 547,000 barrels/day for September, effectively reversing the last of its big production cuts. This, combined with record-high U.S. oil production and unexpectedly weak U.S. gasoline demand at the start of summer, has weighed on prices. On the other hand, geopolitical risks are providing some support. President Trump’s threats of secondary sanctions on Russian oil buyers (part of his push to curtail Russia’s war effort) have kept traders wary of potential supply disruptions. The upshot is that crude oil is balancing between ample supply and event risks – recent reports even suggest a possible U.S.-Russia understanding that could emerge, but for now oil ended the week about 5% lower amid those cross-currents.
+Gold: Traded a $3,33x–3,42x/oz range—softened as the USD firmed mid-week, then recovered as cut odds rose post-Powell. Asian physical demand remained patchy given volatility. 
 
-Gold: Gold has been a standout performer, benefiting from its safe-haven status. The metal is hovering near two-week highs in the ~$3,300–3,400 per ounce range. Investors have flocked to gold as trade war uncertainty escalated and expectations of Fed rate cuts increased, which lowers the opportunity cost of holding non-yielding assets. On August 7, when new U.S. tariffs took effect and soft U.S. jobs data bolstered hopes of easier monetary policy, gold jumped about 0.7%. Analysts note that gold thrives on economic uncertainty and lower real interest rates, both of which are prevalent now. With geopolitical tensions (e.g. unrest in the Middle East, U.S.-Russia and U.S.-China frictions) and a potential Fed easing cycle, gold’s appeal remains strong as a portfolio hedge.
-
-Copper: Copper prices have been choppy, caught between weak demand signals and trade policy swings. Earlier in July, copper markets were roiled by news that the U.S. would impose a sweeping 50% tariff on imported copper products – traders initially assumed it would include all forms of copper, driving a spike in U.S. prices as buyers rushed to secure supply. However, it turned out that the tariff applies mainly to semi-finished copper goods (like wires and pipes) and excludes raw copper ore and refined copper, a surprise exemption aimed at protecting U.S. manufacturers. Once this was clarified, U.S. copper prices plunged back down, erasing the premium that had built up. Globally, copper fundamentals show tight supply – Chinese smelters are scrambling for ore and inventories are near yearly lows yet at the same time, China’s demand is subdued by its economic slowdown. The trade uncertainty is also keeping a lid on prices. In the coming months, analysts expect copper to trade in a range, with any price upside capped by China’s weakness and ongoing tariff-related caution
+Copper: The US 50% tariff clarification—semis targeted; ore/refined excluded—saw the earlier COMEX premium unwind. Fundamentals remain a tug-of-war: tight ore vs subdued China demand.
 
   
 **FX:**
 
-Currency markets reflect the push-pull between safe-haven flows and monetary policy shifts. The U.S. dollar has strengthened recently, thanks to safe-haven demand from trade tensions – e.g. the Bloomberg dollar index jumped ~0.7% in a week amid tariff escalations. Paradoxically, the anticipation of Fed rate cuts later this year could eventually weigh on the dollar, but for now the trade-war fear factor is dominant. Euro has been relatively stable to slightly softer; with the ECB easing done for now and eurozone inflation at target, the euro has lacked a strong catalyst, though it could gain if U.S. policy uncertainty continues. Yen and Swiss franc – traditional safe havens – have been in favor and rallied against most peers as investors seek shelter from volatility (JPMorgan strategists in fact have turned bullish on JPY and CHF, expecting further dollar weakness longer-term given U.S. policy risks). Meanwhile, emerging-market currencies have seen mixed fortunes. Those in countries with aggressive rate cuts (like Turkey’s lira or Russia’s ruble) have been under pressure, whereas others have been buoyed by improved risk sentiment when trade deals or truces emerge. On balance, EM currencies are cautiously firmer than during the height of trade war fears last year, partly because global investors believe Fed easing will eventually weaken the dollar, giving EM some breathing room. Still, any sharp uptick in risk aversion could quickly hit EM FX – so we see continued vulnerability and divergence across the EM currency spectrum.
+USD: Two-way through the week—firmer into Powell, then slipped on the dovish read; DXY eased ~0.4% Friday. EURUSD drifted toward the mid-1.16s; USDJPY eased to ~147–148. 
+
+EUR: Supported by at-target HICP and improving PMIs; still sensitive to Fed path. 
+
+JPY: Bid on growth/CPI mix and BOJ normalisation risk; remains correlated with US yields.
+
+EM FX: July’s inflows support carry, but Asia ex-JP is CNY-beta—weak China prints kept a lid on rallies. 
 
 
 **Equities:**
 
-Equity markets are navigating a tug-of-war between strong year-to-date gains and emerging risks. In the U.S., stock indices recently flirted with record highs – a testament to solid earnings from tech giants and optimism that interest rates will fall. The S&P 500 had climbed for six consecutive sessions into late July, and the Nasdaq reached new peaks, fueled by big-cap tech strength. However, valuations are stretched, and the rally showed signs of fragility when trade headlines turned negative. At the end of July, all three major U.S. indices fell in unison, snapping the S&P’s winning streak as tariff threats spooked investors (UnitedHealth’s earnings miss and a 20% plunge in Novo Nordisk also added to jitters). So far, pullbacks have been shallow, but there is little cushion for disappointment at these price levels. European equities have modestly risen as well – the STOXX 600 is up on the year – supported by ultra-low rates and some relief that worst-case trade outcomes were avoided (e.g. autos tariffs). Nonetheless, Europe’s stock gains are fragile given its tepid growth. In EM equity space, there was a bounce in July on hopes that new U.S. trade deals with countries like Japan, Vietnam, and others would remove some uncertainty. MSCI Emerging Markets index gained as risk appetite improved. But here too, momentum has cooled in early August as investors reassess how far the trade war could go. In summary, equities globally are high but volatile – sentiment can turn on a dime with each policy announcement. The market drivers are clearly centered on trade news and central bank signals, making for an environment where diversification and careful risk management are key.
+US: Powell-rally into Friday (S&P and Russell outperformed; cyclicals picked up) after a choppy start to the week. PMI strength helped breadth, though tariff-linked price indices stayed hot. 
+Reuters
+
+Europe: Gains on earnings + improving PMIs; defensives and banks outperformed as rate volatility cooled.
+
+Asia: Japan supported by GDP; China A-shares choppy on soft data and unchanged LPRs.
 
 **📌 Positioning / Sentiment:**
 
-Market positioning and sentiment have been cautiously optimistic, but cracks are beginning to show. Coming into August, many investors were positioned for risk-on: for example, hedge funds and speculators built short positions against the dollar and went long equities/EM assets, trusting that the Fed and other central banks would ride to the rescue if growth faltered. This complacency is now being tested. As one strategist noted, the market had been “too sanguine on trade policy risks with short dollar and long risk positions,” reflecting excessive confidence. The escalation of the trade war is forcing a rethink – we’re seeing more flows into safe havens like gold (as discussed) and the Japanese yen, and risk appetite is becoming more selective. Measures of investor sentiment have pulled back from exuberant levels; the VIX volatility index, for instance, has ticked up from its summer lows (August is historically a choppy month). Positioning data indicates that long U.S. equity exposure is still high, but there’s been some hedging activity increasing in recent days. On the flip side, short-term Treasury and bond funds have seen inflows, a sign of a defensive tilt. Traders are also almost universally expecting Fed easing – Fed fund futures are pricing in a near-certain September cut which itself can be a risk if the central bank disappoints. In sentiment surveys, fund managers cite geopolitical risk as a top concern now, yet many are reluctant to reduce exposure significantly unless concrete signs of deterioration emerge. In summary, investor sentiment is in a tug-of-war: there’s a baseline optimism that a soft landing can be achieved (and that central banks will cushion any blow), but under the surface there is growing anxiety about tail risks. This is leading to more balanced positioning than a month ago – still tilted toward risk assets but with increasing hedges and safety plays in place. If trade conflicts intensify or growth data disappoints, we could see a sharper sentiment reversal; conversely, any resolution on tariffs could unleash another wave of risk-on enthusiasm. For now, the mood can best be described as guarded optimism turning into cautious realism.
+EM risk appetite: $55.5bn July inflows underline constructive sentiment; helps local debt/FX unless US data re-accelerates. 
+
+Dollar positioning: Momentum shorts re-engaged post-Powell; positioning remains tactically light vs early-August. (FX price action and futures pricing corroborate.) 
+
+
+China: CNY shorts rebuilt to near May highs (poll-based), consistent with disappointing July data and unchanged LPRs.
+
+Rates: US duration longs added on the speech; the steepener is increasingly consensus into supply/term-premium dynamics.
 
 **🧠 Personal Takeaways:**
 
-From a personal perspective, the current global market landscape teaches a lesson in managing cross-currents and uncertainty. We have a unique mix of conditions: trade wars injecting volatility and potentially higher inflation, central banks pivoting toward easing to support growth, and markets that have been resilient (even exuberant) but are not invincible. My key takeaway is that balance and vigilance are crucial right now. The U.S. economy is still solid, but policy uncertainty could quickly change the game – so watching the evolution of tariffs and any Fed response is critical. Europe offers a reminder that even “good news” (like stable inflation at target) comes with caveats, and that policy relief (rate cuts, fiscal support) might already be priced in. China’s situation highlights the importance of domestic demand and how a lack of confidence can keep an economy in check even with low inflation – a stark contrast to the U.S. inflation fears. For investors, this means staying nimble. Diversification across asset classes and regions seems more important than ever: what works (e.g. U.S. tech stocks) can suddenly stumble if conditions change, whereas contrarian plays (like beaten-down EM assets or defensive sectors) can shine when volatility strikes. It’s also evident that sentiment can turn fast – a tweet or headline can swing the pendulum – so having a plan for both risk-on and risk-off scenarios is wise. In short, the global markets as of August 10, 2025 are at an inflection point: there is plenty of hope (that inflation will stay contained and that trade disputes might eventually resolve) but also plenty of risk (that missteps could lead to stagflation or a sharper downturn). My personal approach is to remain cautiously optimistic: participate in opportunities that arise (e.g. dips in quality stocks or local bonds in countries with credible easing) but also keep safeguards like gold or cash equivalents in case conditions deteriorate. The macro environment is a reminder that flexibility and a clear-eyed view of the data – rather than any single narrative – will be key to navigating whatever comes next.
+Powell can cut—data permitting. The Fed validated a dovish skew without pre-committing. That keeps front-end duration and quality risk supported, but embeds disappointment risk if inflation surprises or claims roll lower. 
+
+Steepener bias intact. Markets anchor the 2y to policy easing while the 10y digests supply/term premia and tariff risk. Auction strength/term-premium gauges are the next tells. 
+
+Eurozone: cautiously better. At-target HICP and firmer PMIs justify ECB patience and EUR-on-dips, but external demand and trade policy are swing factors. 
+
+China: incrementalism, not bazooka. Weak July data + unchanged LPRs + rebuilding CNY shorts argue for patience on China-beta until property support scales and demand stabilises. 
+
+
+Commodities: push-pull regime. OPEC+ supply additions vs US draws/geopolitics keep oil in a range; gold still works as a policy/geopolitical hedge if real yields drift lower into easing.
 
         """
 
