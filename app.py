@@ -147,14 +147,6 @@ def load_market_assets():
 # --------------------
 
 
-def load_commentary(file_path: str) -> str:
-    fp = Path(__file__).parent / file_path
-    if fp.exists():
-        return fp.read_text(encoding="utf-8")
-    return "✍️ Add commentary in this file."
-
-
-
 
 # --------------------
 # Market Monitor
