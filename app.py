@@ -377,21 +377,7 @@ if page == "Economic Calendar":
 )
 
 if page == "Macro Regime":
-    st.title("🔍 Macro Regime Classifier")
-    gdp = load_us_gdp().iloc[-1, 0]
-    cpi = load_us_cpi().iloc[-1, 0]
-    if gdp > 0 and cpi > 2:
-        regime = "Reflation 🚀"
-    elif gdp < 0 and cpi > 2:
-        regime = "Stagflation ⚠️"
-    elif gdp < 0 and cpi < 2:
-        regime = "Deflation 🧊"
-    elif gdp > 0 and cpi < 2:
-        regime = "Goldilocks 🌞"
-    else:
-        regime = "Unclear ❓"
-    st.metric("Current Regime", regime)
-    st.write(f"GDP YoY: {gdp:.2f}%, CPI YoY: {cpi:.2f}%")
+
 
 
 if page == "Trade Ideas":
