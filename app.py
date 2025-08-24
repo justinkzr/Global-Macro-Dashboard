@@ -146,7 +146,12 @@ def load_market_assets():
 
 # --------------------
 
-
+# Commentary Loader
+def load_commentary(file_path: str) -> str:
+    fp = Path(__file__).parent / file_path  # resolves relative to app.py
+    if fp.exists():
+        return fp.read_text(encoding="utf-8")
+    return "✍️ Add commentary in this file."
 
 
 
@@ -194,18 +199,8 @@ if page == "US Macro":
     st.title("🇺🇸 US Macro Dashboard")
     st.subheader("Key Economic Indicators (FRED)")
 
-# Commentary Loader
-def load_commentary(file_path: str) -> str:
-    fp = Path(__file__).parent / file_path  # resolves relative to app.py
-    if fp.exists():
-        return fp.read_text(encoding="utf-8")
-    return "✍️ Add commentary in this file."
-
-
-
-
-us_commentary = load_commentary("us_commentary.md")
-st.markdown(us_commentary)
+    us_commentary = load_commentary("us_commentary.md")
+    st.markdown(us_commentary)
 
 # --------------------
 # Eurozone Macro
@@ -239,9 +234,9 @@ if page == "China Macro":
     fig_gdp.update_layout(title="China GDP YoY Growth (%)", xaxis_title="Date", yaxis_title="GDP YoY")
     st.plotly_chart(fig_gdp)
 
-st.subheader("🧾 Commentary")
-china_commentary = load_commentary("china_commentary.md")
-st.markdown(china_commentary)
+    st.subheader("🧾 Commentary")
+    china_commentary = load_commentary("china_commentary.md")
+    st.markdown(china_commentary)
         
 # --------------------
 # Market Commentary
@@ -418,8 +413,8 @@ if page == "Trade Ideas":
     st.title("📑 Trade Ideas Tracker")
 
 
-trade_commentary = load_commentary("tradeidea.md")
-st.markdown(trade_commentary)
+    trade_commentary = load_commentary("tradeidea.md")
+    st.markdown(trade_commentary)
 
 if page == "Backtesting":
     st.title("🧪 Backtesting Results")
