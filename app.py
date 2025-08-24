@@ -252,7 +252,7 @@ if page == "Market Commentary":
 if page == "Sentiment & Positioning":
 
 # File to persist data
-sentiment_file = "sentiment_positioning.csv"
+    sentiment_file = "sentiment_positioning.csv"
 
 # Load existing table if present
 if os.path.exists(sentiment_file):
