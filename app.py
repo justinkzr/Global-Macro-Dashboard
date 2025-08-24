@@ -395,44 +395,6 @@ if page == "Macro Regime":
 if page == "Trade Ideas":
     st.title("📑 Trade Ideas Tracker")
 
-    trade_file = "trade_ideas.csv"
-
-    # Load existing trade ideas
-    if os.path.exists(trade_file):
-        df = pd.read_csv(trade_file)
-    else:
-        df = pd.DataFrame({
-            "Date": [""],
-            "Asset": [""],
-            "Direction": [""],
-            "Entry Price": [""],
-            "Stop Loss": [""],
-            "Take Profit": [""],
-            "Conviction (1–5)": [""],
-            "Time Horizon": [""],
-            "Macro Thesis": [""],
-            "Current Status": [""],
-        })
-
-    edited_df = st.data_editor(df, num_rows="dynamic", use_container_width=True)
-
-    # Save updated trade ideas
-    if st.button("💾 Save Trade Ideas"):
-        edited_df.to_csv(trade_file, index=False)
-        st.success("Trade ideas saved!")
-
-    # Download as CSV
-    csv_buffer = BytesIO()
-    edited_df.to_csv(csv_buffer, index=False)
-    st.download_button(
-        label="⬇️ Download Trade Ideas CSV",
-        data=csv_buffer.getvalue(),
-        file_name="trade_ideas.csv",
-        mime="text/csv"
-    )
-
-    st.markdown("📋 Tip: Use this table to track your trade ideas, review setups, and evaluate performance.")
-
 
 trade_commentary = load_commentary("tradeidea.md")
 st.markdown(trade_commentary)
