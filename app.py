@@ -376,10 +376,6 @@ if page == "Economic Calendar":
     }
 )
 
-if page == "Macro Regime":
-
-
-
 if page == "Trade Ideas":
     st.title("📑 Trade Ideas Tracker")
 
