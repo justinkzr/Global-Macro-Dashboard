@@ -352,18 +352,19 @@ if page == "Economic Calendar":
 
 
     sample_events = [
-        {"title": "🇺🇸 ISM Manufacturing PMI", "start": "2025-08-1"},
-        {"title": "🇺🇸 NFP", "start": "2025-08-1"},
-        {"title": "🇺🇸 CPI", "start": "2025-08-12"},
-        {"title": "🇺🇸 PPI", "start": "2025-08-14"},
-        {"title": "🇺🇸 Retail Sales", "start": "2025-08-15"},
+        {"title": "🇺🇸 PMI", "start": "2025-09-23"},
+        {"title": "🇺🇸 NFP", "start": "2025-09-5"},
+        {"title": "🇺🇸 CPI", "start": "2025-09-11"},
+        {"title": "🇺🇸 PPI", "start": "2025-09-10"},
+        {"title": "🇺🇸 Retail Sales", "start": "2025-09-16"},
         {"title": "🇺🇸 Unemployment Rate", "start": "2025-08-1"},
-        {"title": "🇺🇸 Unemployment Claims", "start": "2025-08-7"},
-        {"title": "🇺🇸 FOMC", "start": "2025-07-31"},
-        {"title": "🇺🇸 Core PCE", "start": "2025-08-29"},
-        {"title": "🇯🇵 BoJ Policy Rate", "start": "2025-07-31"},
-        {"title": "🇬🇧 BoE Policy Rate", "start": "2025-08-7"},
-        {"title": "🇦🇺 RBA Cash Rate", "start": "2025-08-12"},
+        {"title": "🇺🇸 Unemployment Claims", "start": "2025-09-11"},
+        {"title": "🇺🇸 FOMC", "start": "2025-09-18"},
+        {"title": "🇺🇸 Core PCE", "start": "2025-09-26"},
+        {"title": "🇺🇸 GDP", "start": "2025-09-25"},
+        {"title": "🇯🇵 BoJ Policy Rate", "start": "2025-09-19"},
+        {"title": "🇬🇧 BoE Policy Rate", "start": "2025-09-18"},
+        {"title": "🇦🇺 RBA Cash Rate", "start": "2025-09-30"},
     ]
 
     calendar(
