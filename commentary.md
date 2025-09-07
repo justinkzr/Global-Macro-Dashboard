@@ -2,110 +2,93 @@
 
 🌎 Macro Environment Summary: 
 
-**US:**
+US
 
-Policy & markets: At Jackson Hole, Chair Powell signalled the Fed is open to a September cut, citing a shift in the balance of risks toward the labour market while acknowledging lingering inflation uncertainty. Futures quickly priced ~85–90% odds of a 25 bp cut; Treasury yields fell, equities rallied, and the USD slipped into the Friday close. 
-
-Growth pulse & prices: S&P Global flash PMIs (Aug) show the private sector still expanding; the composite rose to 55.4, with manufacturing back in expansion and input/output price gauges firming—companies specifically cited tariffs in higher costs. Jobless claims ticked up mid-week, reinforcing the “growth cooling / policy easing” narrative. 
-
-Takeaway: Policy guidance turned easing-biased but data-dependent. Markets are primed for a Sept cut, leaving asymmetry if the next inflation/employment prints surprise hot. 
+Policy & markets. The Aug jobs report (Fri, Sep 5) showed nonfarm payrolls +22k and unemployment 4.3%, reinforcing expectations of a September Fed cut; futures added a small tail risk of 50 bp. Front-end yields fell and risk rallied into the close. 
 
 
-**Eurozone:**
+Growth pulse & prices. Activity data stayed mixed: ISM Manufacturing 48.7 (contraction, but improving) and ISM Services 52.0 (expansion); S&P Global flash composite held at 55.4 in August. The setup is “cooling labor, still-OK activity,” keeping the Fed easing-biased but data-dependent into CPI week. 
 
-Inflation & policy: HICP held at 2.0% y/y (Jul) with core ~2.3%, reinforcing expectations that the ECB stays on hold after its rapid easing earlier this year. Sources guidance suggested a September pause, with scope to revisit cuts later if growth/inflation soften again. 
+Takeaway. Markets are heavily priced for a Sep 16–17 cut; the near-term asymmetry is to the upside in yields/USD if inflation surprises hot. 
+
+
+Eurozone
+
+Inflation & policy. Flash HICP rose to 2.1% y/y (Aug) from 2.0% (Jul), consistent with the ECB pausing in September while keeping optionality later in the year. 
+
+
+Activity. HCOB composite PMI ~51.0 in Aug (12-month high but modest momentum), with curves still taking direction from the US. 
+
+
+China
+
+Data. Official NBS manufacturing PMI 49.4 (fifth month of contraction); non-manufacturing 50.3. Caixin PMIs were firmer (mfg 50.5; services 53.0; composite 51.9), pointing to services-led stabilization.
+
+Policy & FX. Policymakers continued to signal a preference for CNY stability, even as growth signals are mixed. 
+
+
+Other
+
+Japan. Q2 capex +7.6% y/y supports domestic demand; Tokyo core CPI 2.5% y/y (Aug) keeps BOJ normalization risk alive. BOJ Gov. Ueda reiterated the bank could keep raising if conditions warrant; revised Q2 GDP due Sep 8. 
+
+
+EM flows. IIF estimated $55.5bn EM portfolio inflows in July (2nd-largest in four years), a supportive backdrop that carried into August barring US data shocks. 
+
+
+📊 Market Drivers (1–8 Sep)
+
+Rates. Post-NFP, the US curve bull-steepened: 2y ~3.47–3.53%, 10y ~4.08–4.10% by Friday; attention turns to CPI. Ongoing discussion of term-premium/fiscal risks keeps the long end sticky even as the front end prices cuts. 
+
+
+FX. The USD fell after NFP (DXY ~97.5), EUR firmed toward 1.17, and USDJPY slipped toward 147–148 on softer US yields and lingering BOJ normalization risk. 
+
+
+Commodities.
+• Oil: Drifted lower on a surprise US crude build and expectations that OPEC+ could raise output again; Brent ~$66–68 late-week. 
+
+
+• Gold: Popped to fresh records >$3,500/oz as cut odds rose and the USD softened. 
+
+
+• Copper: The tariff-trade premium on COMEX continued to unwind after confirmation that semi-finished copper, not refined, is targeted—pressuring the earlier US premium. 
+
+
+Equities.
+• US: Major indices hit record intraday highs Friday as the weak jobs print boosted cut odds; tech led on AI-related beats. 
+
+
+• Europe: Stocks up on tech M&A headlines and calmer rates; still sensitive to ECB communication and fiscal headlines. 
+
+
+• Asia: Japan choppy (rates chatter); China supported by local risk appetite (margin financing elevated). 
+
+
+📌 Positioning / Sentiment
+
+• Fed (Sep): Markets largely price a 25 bp cut, with a non-trivial 50 bp tail after NFP. 
+
+
+• Dollar: Momentum shorts re-engaged post-NFP; DXY at ~97.5 into the weekend. 
+
+
+• Rates bias: Steepener remains consensus—front-end anchored by cuts while long-end reflects supply/term-premium and fiscal worries. 
+
+
+• EM risk: Constructive after the IIF July surge, but dispersion remains (China-beta, local politics). 
+
+
+🧠 Personal Takeaways
+
+US: The Fed now has cover to cut in September, barring an upside CPI surprise. That favors front-end duration and steepeners as long-end term premium resists. 
+
+
+Eurozone: “Pause-and-assess” fits HICP 2.1% and modest PMI gains; EUR trades largely on the Fed path near-term. 
 European Commission
 
-Activity: Q2 GDP +0.1% q/q and improving Aug flash PMIs suggest a modest broadening in activity (manufacturing out of contraction for the first time since 2022 in some surveys), but momentum remains fragile.
 
-Trade tensions: The US-EU tariff cap (~15%) limited worst-case damage vs earlier threats, but policymakers still flag uncertainty around export demand and price dynamics. 
-
-
-**China:**
-
-Data: July prints missed forecasts—industrial output +5.7% y/y, retail sales +3.7% y/y, FAI slowed—underscoring soft domestic demand. CPI 0.0% y/y and PPI −3.6% y/y keep deflation concerns alive. New-home prices −0.3% m/m and −2.8% y/y highlight property drag. 
-Reuters
-
-Policy & FX: The PBOC left LPRs unchanged (1-yr 3.00% / 5-yr 3.50%, Aug 20), prioritising targeted support over broad easing. Bearish CNY positioning rebuilt toward May highs as growth data disappointed; authorities continue to signal a preference for yuan stability. 
-
-Takeaway: Incremental easing and administrative support continue; without stronger consumption/property stabilisation, growth looks sub-trend into H2. 
+China: Mixed PMIs with policy leaning toward FX stability over bazooka-style easing → patience on China-beta. 
 
 
-**Other:**
-
-Japan: Q2 GDP beat and sticky core CPI keep BOJ normalisation risk on the table later this year.
-
-EM flows: IIF estimated $55.5bn EM portfolio inflows in July (2nd-largest in four years), supporting risk appetite and carry into August—conditional on US data and China sentiment
-
-**📊 Market Drivers:**
-
-**Rates:**
-US: Powell’s tone delivered a bull-steepening impulse: front-end anchored by cut odds while 10y hovered near the mid-4.2s late week as term-premium/supply themes linger. Next catalysts are the final pre-FOMC labour and inflation prints. 
-
-Eurozone: At-target inflation and better PMIs argue for patience; curves largely took direction from the US. 
-
-Japan: Solid growth + above-target core CPI keep JGB term premia biased higher on any BOJ guidance shift.
-  
-**Commodities:**
-
-Oil: OPEC+ confirmed another +547 kb/d addition for September, continuing its market-share push. Prices stabilised late-week on a larger-than-expected US crude draw and geopolitics; Brent sat in the mid-$60s area. 
-
-Gold: Traded a $3,33x–3,42x/oz range—softened as the USD firmed mid-week, then recovered as cut odds rose post-Powell. Asian physical demand remained patchy given volatility. 
-
-Copper: The US 50% tariff clarification—semis targeted; ore/refined excluded—saw the earlier COMEX premium unwind. Fundamentals remain a tug-of-war: tight ore vs subdued China demand.
-
-  
-**FX:**
-
-USD: Two-way through the week—firmer into Powell, then slipped on the dovish read; DXY eased ~0.4% Friday. EURUSD drifted toward the mid-1.16s; USDJPY eased to ~147–148. 
-
-EUR: Supported by at-target HICP and improving PMIs; still sensitive to Fed path. 
-
-JPY: Bid on growth/CPI mix and BOJ normalisation risk; remains correlated with US yields.
-
-EM FX: July’s inflows support carry, but Asia ex-JP is CNY-beta—weak China prints kept a lid on rallies. 
+Japan: Capex strength + sticky CPI keep BOJ normalization risk live; watch Sep 8 GDP revision and wage follow-through for JPY/JGB term premia. 
 
 
-**Equities:**
-
-US: Powell-rally into Friday (S&P and Russell outperformed; cyclicals picked up) after a choppy start to the week. PMI strength helped breadth, though tariff-linked price indices stayed hot. 
-Reuters
-
-Europe: Gains on earnings + improving PMIs; defensives and banks outperformed as rate volatility cooled.
-
-Asia: Japan supported by GDP; China A-shares choppy on soft data and unchanged LPRs.
-
-**📌 Positioning / Sentiment:**
-
-EM risk appetite: $55.5bn July inflows underline constructive sentiment; helps local debt/FX unless US data re-accelerates. 
-
-Dollar positioning: Momentum shorts re-engaged post-Powell; positioning remains tactically light vs early-August. (FX price action and futures pricing corroborate.) 
-
-
-China: CNY shorts rebuilt to near May highs (poll-based), consistent with disappointing July data and unchanged LPRs.
-
-Rates: US duration longs added on the speech; the steepener is increasingly consensus into supply/term-premium dynamics.
-
-**🧠 Personal Takeaways:**
-
-Powell can cut—data permitting. The Fed validated a dovish skew without pre-committing. That keeps front-end duration and quality risk supported, but embeds disappointment risk if inflation surprises or claims roll lower. 
-
-Steepener bias intact. Markets anchor the 2y to policy easing while the 10y digests supply/term premia and tariff risk. Auction strength/term-premium gauges are the next tells. 
-
-Eurozone: cautiously better. At-target HICP and firmer PMIs justify ECB patience and EUR-on-dips, but external demand and trade policy are swing factors. 
-
-China: incrementalism, not bazooka. Weak July data + unchanged LPRs + rebuilding CNY shorts argue for patience on China-beta until property support scales and demand stabilises. 
-
-
-Commodities: push-pull regime. OPEC+ supply additions vs US draws/geopolitics keep oil in a range; gold still works as a policy/geopolitical hedge if real yields drift lower into easing.
-
-        """
-
-**⚖️ Tariff Tracker:**
-
-| Country         | Sector  | Rate   | Effective Date |
-|-----------------|--------|----------|---------------|
-| EU              | All    | 15%      |     8/7/2025  |      
-| EU, JP, SK      | Auto and Parts   | 12.5-15%    | - |
-| Vietnam         | All   | 20%      |   8/7/2025 |
-| Japan | All | 15%      |   8/7/2025 |
