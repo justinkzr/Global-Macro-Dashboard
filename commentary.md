@@ -1,94 +1,79 @@
-📅 Date: 1 Sep - 5 Sep 2025	
+📅 Date: 15 Sep - 19 Sep 2025	
 
 🌎 Macro Environment Summary: 
 
 US
 
-Policy & markets. The Aug jobs report (Fri, Sep 5) showed nonfarm payrolls +22k and unemployment 4.3%, reinforcing expectations of a September Fed cut; futures added a small tail risk of 50 bp. Front-end yields fell and risk rallied into the close. 
+Policy & markets. The Fed cut 25 bp on Sep 17 to 4.00–4.25%, its first cut of 2025, and signaled the possibility of two more cuts this year. Powell said there wasn’t broad support for a larger (50 bp) move, framing the step as risk-management amid a softer labor market. Front-end yields fell and risk assets rallied into the week’s close. 
 
+Growth & prices. The policy pivot followed months of cooling labor indicators; markets now watch the next inflation print to judge how quickly the easing path evolves. 10Y ~4.14% and 2Y ~3.57% on Sep 19 captured a bull-steepening bias post-FOMC. 
 
-Growth pulse & prices. Activity data stayed mixed: ISM Manufacturing 48.7 (contraction, but improving) and ISM Services 52.0 (expansion); S&P Global flash composite held at 55.4 in August. The setup is “cooling labor, still-OK activity,” keeping the Fed easing-biased but data-dependent into CPI week. 
-
-Takeaway. Markets are heavily priced for a Sep 16–17 cut; the near-term asymmetry is to the upside in yields/USD if inflation surprises hot. 
+Takeaway. Guidance turned easing-biased but data-dependent; the main asymmetry is a hawkish repricing if near-term inflation surprises on the upside. 
 
 
 Eurozone
 
-Inflation & policy. Flash HICP rose to 2.1% y/y (Aug) from 2.0% (Jul), consistent with the ECB pausing in September while keeping optionality later in the year. 
+Inflation & policy. The ECB held in Sep with staff projections keeping headline near 2% through 2025 and core easing in 2026–27; tone was “pause and assess.” 
 
-
-Activity. HCOB composite PMI ~51.0 in Aug (12-month high but modest momentum), with curves still taking direction from the US. 
-
+Activity. Earlier HICP (Aug) ~2.1% y/y and modest PMI improvement leave the ECB patient, with curves still taking directional cues from the U.S. 
 
 China
 
-Data. Official NBS manufacturing PMI 49.4 (fifth month of contraction); non-manufacturing 50.3. Caixin PMIs were firmer (mfg 50.5; services 53.0; composite 51.9), pointing to services-led stabilization.
+Data. Aug activity missed: industrial output +5.2% y/y, retail sales +3.4% y/y; new-home prices fell again—reinforcing weak domestic demand. 
 
-Policy & FX. Policymakers continued to signal a preference for CNY stability, even as growth signals are mixed. 
-
+Policy & FX. Markets expected LPRs to stay at 3.00% / 3.50% (Sep 20 fixing) despite the Fed cut, underscoring Beijing’s preference for targeted easing and CNY stability. 
 
 Other
 
-Japan. Q2 capex +7.6% y/y supports domestic demand; Tokyo core CPI 2.5% y/y (Aug) keeps BOJ normalization risk alive. BOJ Gov. Ueda reiterated the bank could keep raising if conditions warrant; revised Q2 GDP due Sep 8. 
+Japan. The BoJ held at 0.50% (7–2 vote) but surprised by starting ETF/J-REIT sales, while two members backed a hike to 0.75%. That kept normalization risk alive; JPY firmed and equities wobbled. 
+Bank of Japan
+
+EM flows. The IIF reported $44.8bn EM portfolio inflows in Aug (with July revised to $38.1bn), but highlighted growing fragility and dispersion beneath the headline. 
 
 
-EM flows. IIF estimated $55.5bn EM portfolio inflows in July (2nd-largest in four years), a supportive backdrop that carried into August barring US data shocks. 
+📊 Market Drivers (15–19 Sep)
 
+Rates. The Fed’s move produced a bull-steepener: 10Y ~4.14%, 2Y ~3.57% by Friday, with long-end stickiness reflecting term-premium and supply themes even as the front-end prices more easing. 
 
-📊 Market Drivers (1–8 Sep)
-
-Rates. Post-NFP, the US curve bull-steepened: 2y ~3.47–3.53%, 10y ~4.08–4.10% by Friday; attention turns to CPI. Ongoing discussion of term-premium/fiscal risks keeps the long end sticky even as the front end prices cuts. 
-
-
-FX. The USD fell after NFP (DXY ~97.5), EUR firmed toward 1.17, and USDJPY slipped toward 147–148 on softer US yields and lingering BOJ normalization risk. 
-
+FX. The USD whipsawed—softer into FOMC, then steadier after Powell’s cautious press conference: DXY ~97.6 (Sep 19); EURUSD ~1.175 after backing off ~1.19 highs; USDJPY ~148 as BoJ headlines supported JPY. 
 
 Commodities.
-• Oil: Drifted lower on a surprise US crude build and expectations that OPEC+ could raise output again; Brent ~$66–68 late-week. 
+• Oil: Despite the Fed cut, Brent ~$66–68 as oversupply and weak distillate demand capped rallies; EIA showed a 9.3mb crude draw but a +4mb distillate build. OPEC+’s earlier +547 kb/d Sep hike still framed supply. 
 
+• Gold: Extended its run—spot ~$3,650–3,660/oz—on lower real-rate expectations and ongoing policy uncertainty. 
 
-• Gold: Popped to fresh records >$3,500/oz as cut odds rose and the USD softened. 
-
-
-• Copper: The tariff-trade premium on COMEX continued to unwind after confirmation that semi-finished copper, not refined, is targeted—pressuring the earlier US premium. 
-
+• Copper: The COMEX–LME tariff premium continued to unwind after the U.S. clarified that semis are targeted while refined metal is excluded; positioning and inventories remained distorted. 
 
 Equities.
-• US: Major indices hit record intraday highs Friday as the weak jobs print boosted cut odds; tech led on AI-related beats. 
+• US: Another record-setting week; S&P +1.2%, Nasdaq +2.2%, Dow +1.05% as the cut supported multiples even with mixed housing data. 
 
-
-• Europe: Stocks up on tech M&A headlines and calmer rates; still sensitive to ECB communication and fiscal headlines. 
-
-
-• Asia: Japan choppy (rates chatter); China supported by local risk appetite (margin financing elevated). 
+• Europe/Asia: Europe rose on calmer rates; Japan dipped as BoJ’s ETF/J-REIT plan and hawkish split lifted yields and firmed JPY. 
 
 
 📌 Positioning / Sentiment
 
-• Fed (Sep): Markets largely price a 25 bp cut, with a non-trivial 50 bp tail after NFP. 
+• Fed path: Markets price more cuts in 2025; Powell pushed back on 50 bp step-downs, keeping outcomes “meeting-by-meeting.” 
 
+• Dollar: Post-FOMC, USD steadied from early-week softness; EUR and AUD gains faded late-week. 
 
-• Dollar: Momentum shorts re-engaged post-NFP; DXY at ~97.5 into the weekend. 
+• Rates bias: Steepener remains consensus—front-end led by policy, long-end anchored by term premium/supply. 
 
-
-• Rates bias: Steepener remains consensus—front-end anchored by cuts while long-end reflects supply/term-premium and fiscal worries. 
-
-
-• EM risk: Constructive after the IIF July surge, but dispersion remains (China-beta, local politics). 
+• EM risk: Headline inflows persist, but dispersion (China vs ex-China) is rising. 
 
 
 🧠 Personal Takeaways
 
-US: The Fed now has cover to cut in September, barring an upside CPI surprise. That favors front-end duration and steepeners as long-end term premium resists. 
+Powell cut, cautiously. The Fed validated a dovish skew but resisted a larger cut; that supports front-end duration while leaving hawkish-surprise risk if inflation pops. 
 
 
-Eurozone: “Pause-and-assess” fits HICP 2.1% and modest PMI gains; EUR trades largely on the Fed path near-term. 
-European Commission
+Steepener bias intact. The front-end should absorb most of the easing; the 10Y stays sticky on supply/term-premium and fiscal optics. 
 
 
-China: Mixed PMIs with policy leaning toward FX stability over bazooka-style easing → patience on China-beta. 
+Eurozone: patient. With inflation ~2% and growth fragile, the ECB can stay sidelined; EUR trades the Fed path and energy dynamics. 
 
 
-Japan: Capex strength + sticky CPI keep BOJ normalization risk live; watch Sep 8 GDP revision and wage follow-through for JPY/JGB term premia. 
+China: incrementalism. Soft Aug data and LPR steady-bias argue for targeted easing and FX stability rather than bazooka stimulus. 
 
+
+Japan: normalization risk. Hold + ETF/J-REIT sales + split board keep JPY bid on dips and JGB term premia biased higher.
 
