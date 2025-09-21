@@ -28,8 +28,6 @@ Other
 Japan. The BoJ held at 0.50% (7–2 vote) but surprised by starting ETF/J-REIT sales, while two members backed a hike to 0.75%. That kept normalization risk alive; JPY firmed and equities wobbled. 
 Bank of Japan
 
-EM flows. The IIF reported $44.8bn EM portfolio inflows in Aug (with July revised to $38.1bn), but highlighted growing fragility and dispersion beneath the headline. 
-
 
 📊 Market Drivers (15–19 Sep)
 
