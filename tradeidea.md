@@ -45,3 +45,29 @@ Mitigate: Hedge with a small long USD/JPY call (OTM 1-month) against tail moves.
 
 
 
+
+**Trade 2: EURUSD Short** 
+
+Time Horizone: 3months
+Conviction: Medium
+Theme: Sticky services inflation in EU and weakening labour market and softening inflation in US 
+
+US: Fed cut rates by 25 bps to 4.00-4.25% in September Fed meeting on weak labour market reflected in the previous 2 NFP data. Inflation has been cooling as well. Core PCE is 2.9% y-o-y while headline PCE is 2.7% which gives the Fed more room to cut. Labour market is losing
+its momentum with a weak print of +22k jobs in the August NFP data and unemployment up to 4.3%. 
+
+EU: ECB on hold with deposit rates at 2%, Euro area HICP is at 2% y-o-y. Eurozone momentum is stabilising with flash PMI at 16 month high even if still soft, recession risk is receding at the margin. Euro area runs a sizeable current account surplus as well which is a medium term EUR support. 
+Q2 GDP grew 0.1% q-o-q and composite PMI ticked above 50 which helps cap downside fears. Labour market on the other hand is still firm at 6.2% near record lows. 
+
+Still high inflation in food and services has led to increase in inflation forecast and strong labour market will keep real wage growth above productivity, keeping inflationary pressure.
+Headline inflation stood at 2% in August, service and food prices remain above target, increasing by more than 3% y-o-y. Service accounts for most of the price basket in HICP and wages are main driver with wages increase more than 4% y-o-y.
+
+Strong labour market helps economy withstand shocks as unemployment at multi decade low of 6.2%. This is due to labour market reforms, AI boom playing a significant role in job creation which will cause GDP growth to increase and unemployment to fall.
+
+
+Trade Plan:
+
+Seagull: Buy 3m 1.19 call, Sell 3m 1.21 put, Sell 3m 1.15 put 
+Size the short put at 25–50% of the call-spread notional (e.g., 1/2 or 1/3 size) to keep the left tail contained.
+Clear topside target (1.19–1.21), cheap carry and smaller left-tail, and don’t need unlimited upside. I’ll use a risk-reversal if I think EUR can overshoot and I’m happy to wear more tail and vega.
+
+Risks: higher tariffs, adverse geopolitical developments, spillover effects from slower economic growth for trading partners.
